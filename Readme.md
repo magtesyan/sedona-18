@@ -1,6 +1,6 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Mikael Magtesyan](https://up.htmlacademy.ru/adaptive/18/user/1100875).
+* Студент: [Mikael Magtesyan](https://htmlacademy.ru/profile/id1100875).
 * Наставник: [Артем Рудов](https://htmlacademy.ru/profile/artrudov).
 
 ---
