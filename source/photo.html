@@ -4,91 +4,93 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page-body">
 
-    <header class="page-header">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-list text__color_white text__size_medium text__weight_bold">
-            <li class="site-list__item">
-              <a href="#">Главная</a>
+    <header class="page-body__page-header page-header">
+      <button class="page-header__nav-toggle" type="button">Открыть меню</button>
+
+      <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list text_color_white text_size_medium text_weight_bold">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Фото и видео</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">Форма отзыва</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="site-list__item">
-              <a href="#">HTML Academy</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
-        </div>
       </nav>
-      <a class="page-header__emblem" href="#">
-        <img class="page-header__emblem" src="https://via.placeholder.com/150x150" width="102px" height="83px" alt="City of Sedona emblem">
+
+      <a class="page-header__logo logo" href="#">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="102px" height="83px" alt="City of Sedona emblem">
       </a>
     </header>
 
-    <main class="page-main">
+    <main class="page-body__page-main page-main">
 
       <h1 class="visually-hidden">Фото и видео Седоны</h1>
-      <div class="welcome">
+      <div class="page-main__welcome welcome">
         <img class="welcome__logo" src="https://via.placeholder.com/150x150" width="282px" height="214px" alt="Welcome to Sedona">
       </div>
 
       <section class="photo-and-video">
-        <h2 class="photo-and-video__title text__color_black text__size_medium">Фото и видео</h2>
-        <p class="photo-and-video__intro text__color_black text__size_small">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-        <ul class="photo-and-video__list photos-list">
+        <h2 class="photo-and-video__title text_color_black text_size_medium">Фото и видео</h2>
+        <p class="photo-and-video__intro text_color_black text_size_small">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+
+        <ul class="photo-and-video__list photos-list photo">
           <li class="photos-list__item">
-            <img class="photos-list__photo" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Народные просторы">
-            <h3 class="photos-list__title text__color_black text__size_small text__weight_bold">Народные просторы</h3>
-            <p class="photos-list__author text__color_black text__size_small text__decoration_normal">Автор фото: Борис</p>
-            <p class="photos-list__likes text__color_black text__size_small">1350</p>
+            <h3 class="photo__title text_color_black text_size_small text_weight_bold">Народные просторы</h3>
+            <img class="photo__image" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Народные просторы">
+            <p class="photo__author text_color_black text_size_small text_decoration_normal">Автор фото: Борис</p>
+            <p class="photo__likes text_color_black text_size_small">1350</p>
           </li>
           <li class="photos-list__item">
-            <img class="photos-list__photo" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Местная растительность">
-            <h3 class="photos-list__title text__color_black text__size_small text__weight_bold">Местная растительность</h3>
-            <p class="photos-list__author text__color_black text__size_small text__decoration_normal">Автор фото: Сергей</p>
-            <p class="photos-list__likes text__color_black text__size_small">143</p>
+            <h3 class="photo__title text_color_black text_size_small text_weight_bold">Местная растительность</h3>
+            <img class="photo__image" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Местная растительность">
+            <p class="photo__author text_color_black text_size_small text_decoration_normal">Автор фото: Сергей</p>
+            <p class="photo__likes text_color_black text_size_small">143</p>
           </li>
           <li class="photos-list__item">
-            <img class="photos-list__photo" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Дорога на север">
-            <h3 class="photos-list__title text__color_black text__size_small text__weight_bold">Дорога на север</h3>
-            <p class="photos-list__author text__color_black text__size_small text__decoration_normal">Автор фото: Петр</p>
-            <p class="photos-list__likes text__color_black text__size_small">96</p>
+            <h3 class="photo__title text_color_black text_size_small text_weight_bold">Дорога на север</h3>
+            <img class="photo__image" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Дорога на север">
+            <p class="photo__author text_color_black text_size_small text_decoration_normal">Автор фото: Петр</p>
+            <p class="photo__likes text_color_black text_size_small">96</p>
           </li>
           <li class="photos-list__item">
-            <img class="photos-list__photo" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Мост дьявола">
-            <h3 class="photos-list__title text__color_black text__size_small text__weight_bold">Мост дьявола</h3>
-            <p class="photos-list__author text__color_black text__size_small text__decoration_normal">Автор фото: Антон</p>
-            <p class="photos-list__likes text__color_black text__size_small">254</p>
+            <h3 class="photo__title text_color_black text_size_small text_weight_bold">Мост дьявола</h3>
+            <img class="photo__image" src="https://via.placeholder.com/150x150" width="280px" height="280px" alt="Мост дьявола">
+            <p class="photo__author text_color_black text_size_small text_decoration_normal">Автор фото: Антон</p>
+            <p class="photo__likes text_color_black text_size_small">254</p>
           </li>
         </ul>
+
       </section>
     </main>
 
-    <footer class="page-footer">
-      <b class="page-footer__hash text__color_black text__size_big text__weight_bold">#visitsedona</b>
-      <div class="page-footer__social social">
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link_twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link_youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютуб</a>
-          </li>
-        </ul>
-      </div>
-      <div class="page-footer__copyright copyright">
-        <p class="copyright__text text__color_black text__size_small">Разработано:</p>
-        <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
-      </div>
+    <footer class="page-body__page-footer page-footer">
+      <a class="page-footer__hash text_color_black text_size_big text_weight_bold" href="#">#visitsedona</a>
+
+      <ul class="page-footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link_twitter" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_facebook" href="https://www.facebook.com/htmlacademy">Мы в Фейсбук</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link_youtube" href="https://www.youtube.com/htmlacademy">Мы в Ютуб</a>
+        </li>
+      </ul>
+
+      <p class="copyright__text text_color_black text_size_small">Разработано:
+      <a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </p>
+
     </footer>
 
   </body>
