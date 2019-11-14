@@ -4,9 +4,113 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
-  <body>
+  <body class="page-body">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+    <header class="page-body__page-header page-header">
+      <button class="page-header__nav-toggle" type="button">Открыть меню</button>
+
+      <nav class="page-header__main-nav main-nav">
+          <ul class="main-nav__list text text_color_white text_size_medium text_weight_bold">
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="index.html">Главная</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+      </nav>
+
+      <a class="page-header__logo logo" href="#">
+        <img class="logo__image" src="https://via.placeholder.com/150x150" width="102" height="83" alt="City of Sedona emblem">
+      </a>
+
+      <h1 class="visually-hidden">Welcome to Sedona</h1>
+
+      <div class="page-header__welcome welcome">
+        <img class="welcome__img" src="https://via.placeholder.com/150x150" width="282" height="214" alt="Welcome to Sedona">
+      </div>
+
+      <p class="page-header__slogan text text_color_black text_size_medium text_weight_bold">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
+      <p class="page-header__intro text text_color_black text_size_small">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+
+    </header>
+
+    <main class="page-body__page-main page-main">
+
+      <ol class="page-main__features features">
+        <li class="features__item advantages">
+          <h2 class="advantages__title text text_color_white text_size_medium text_weight_bold">Настоящий городок</h2>
+          <p class="advantages__number text text_color_white text_size_small">- №1 -</p>
+          <p class="advantages__description text text_color_white text_size_small">Седона не аттракцион для туристов, там течет своя жизнь</p>
+          <img class="advantages__photo" src="https://via.placeholder.com/150x150" width="520" height="260" alt="Настоящий городок">
+
+          <ul class="features__detailed-list details">
+            <li class="details__item text text_color_black">
+              <h3 class="details__title text text_size_medium text_weight_bold">Жилье</h3>
+              <p class="details__description text text_size_small">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+            </li>
+            <li class="details__item">
+              <h3 class="details__title text text_size_medium text_weight_bold">Сувениры</h3>
+              <p class="details__description text text_size_small">Не только китайского, но и местного производства!</p>
+            </li>
+            <li class="details__item">
+              <h3 class="details__title text text_size_medium text_weight_bold">Еда</h3>
+              <p class="details__description text text_size_small">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+          </ul>
+
+        </li>
+        <li class="features__item advantages">
+          <h2 class="advantages__title text text_color_white text_size_medium text_weight_bold">Там есть мост дьявола</h2>
+          <p class="advantages__number text text_color_white text_size_small">- №2 -</p>
+          <p class="advantages__description text text_color_white text_size_small">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+          <img class="advantages__photo" src="https://via.placeholder.com/150x150" width="520" height="260" alt="Мост дьявола">
+        </li>
+        <li class="features__item advantages text text_color_black">
+          <h2 class="advantages__title text text_size_medium text_weight_bold">Небольшая площадь</h2>
+          <p class="advantages__number text text_size_small">- №3 -</p>
+          <p class="advantages__description text text_size_small">Все интересные места находятся очень близко</p>
+        </li>
+        <li class="features__item advantages text text_color_black">
+          <h2 class="advantages__title text text_size_medium text_weight_bold">Красивая дорога</h2>
+          <p class="advantages__number text text_size_small">- №4 -</p>
+          <p class="advantages__description text text_size_small">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+        </li>
+        <li class="features__item advantages text text_color_black">
+          <h2 class="advantages__title text text_size_medium text_weight_bold">Мало туристов</h2>
+          <p class="advantages__number text text_size_small">- №5 -</p>
+          <p class="advantages__description text text_size_small">Большинство едет в Гранд-Каньон и толпится там</p>
+        </li>
+      </ol>
+
+    </main>
+
+    <footer class="page-body__page-footer page-footer">
+      <a class="page-footer__hash text text_color_black text_size_big text_weight_bold" href="#">#visitsedona</a>
+
+      <ul class="page-footer__social-list social">
+        <li class="social__item">
+          <a class="social__link" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбук</a>
+        </li>
+        <li class="social__item">
+          <a class="social__link" href="https://www.youtube.com/htmlacademy">Мы в Ютуб</a>
+        </li>
+      </ul>
+
+      <p class="page-footer__copyright copyright text text_color_black text_size_small">Разработано:
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      </p>
+
+    </footer>
 
   </body>
 </html>
