@@ -34,9 +34,57 @@
         <img class="welcome__image" src="https://via.placeholder.com/150x150" width="282" height="214" alt="Welcome to Sedona">
       </div>
 
+      <h1 class="page-header__title text text_color_black text_size_medium text_weight_bold">Оставьте свой отзыв</h1>
+      <p class="page-header__intro text text_color_black text_size_small">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+
     </header>
 
     <main class="page-body__page-main page-main">
+      <form class="page-main__feedback-form feedback" method="get" action="https://echo.htmlacademy.ru">
+        <ul class="feedback__list feedback-list">
+          <li class="feedback-list__item feedback-list__item_name name">
+            <h2 class="name__title text text_color_black text_size_medium text_weight_bold">Представтесь:</h2>
+            <label class="name__label text text_color_black text_size_small" for="first-name">Имя*:</label>
+            <input class="name__input name__input_first-name text text_color_black text_size_medium text_weight_bold text_decoration_normal" type="text" id="first-name" placeholder="Петр" required>
+            <label class="name__label text text_color_black text_size_small" for="second-name">Фамилия*:</label>
+            <input class="name__input text text_color_black text_size_medium text_weight_bold text_decoration_normal" type="text" id="second-name" placeholder="Иванов" required>
+            <label class="name__label text text_color_black text_size_small" for="middle-name">Отчество:</label>
+            <input class="name__input text text_color_black text_size_medium text_weight_bold text_decoration_normal" type="text" id="middle-name" placeholder="Александрович">
+          </li>
+          <li class="feedback-list__item feedback-list__item_contacts contacts">
+            <h2 class="contacts__title text text_color_black text_size_medium text_weight_bold">Контактная информация:</h2>
+            <label class="contacts__label text text_color_black text_size_small" for="phone-number">Контактный телефон*:</label>
+            <input class="contacts__input text text_color_black text_size_medium text_weight_bold text_decoration_normal" id="phone-number" placeholder="Введите телефон" required>
+            <label class="contacts__label text text_color_black text_size_small" for="email">Электронная почта*:</label>
+            <input class="contacts__input text text_color_black text_size_medium text_weight_bold text_decoration_normal" id="email" placeholder="Введите e-mail" required>
+          </li>
+          <li class="feedback-list__item feedback-list__item_impression impression">
+            <h2 class="impression__title text text_color_black text_size_medium text_weight_bold">Ваше общее впечатление:</h2>
+            <input class="impression__input" type="radio" id="positive" name="impression-radio" value="positive" checked>
+            <label class="impression__label text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="positive">Скорее положительное</label>
+            <input class="impression__input" type="radio" id="negative" name="impression-radio" value="negative">
+            <label class="impression__label text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="negative">Скорее отрицательное</label>
+            <input class="impression__input" type="radio" id="neutral" name="impression-radio" value="neutral">
+            <label class="impression__label text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="neutral">Скорее положительное</label>
+          </li>
+          <li class="feedback-list__item feedback-list__item_visited visited">
+            <h2 class="visited__title text text_color_black text_size_medium text_weight_bold">Посещенные достопримечательности:</h2>
+            <input class="visited__input" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked>
+            <label class="visited__label text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="devil-bridge">Мост дьявола</label>
+            <input class="visited__input" type="checkbox" id="mountain-bell" name="visited-checkbox" value="mountain-bell" checked>
+            <label class="visited__label text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="mountain-bell">Гора-Колокол</label>
+            <input class="visited__input" type="checkbox" id="slide-park" name="visited-checkbox" value="slide-park" checked>
+            <label class="visited__label text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="slide-park">Слайд-парк</label>
+            <input class="visited__input" type="checkbox" id="red-rocks" name="visited-checkbox" value="red-rocks">
+            <label class="visited__label text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="red-rocks">Красные скалы</label>
+          </li>
+          <li class="feedback-list__item feedback-list__item_emotions emotions">
+            <h2 class="emotions__title text text_color_black text_size_medium text_weight_bold">Опишите свои эмоции:</h2>
+            <textarea class="text text_color_black text_size_medium text_weight_bold" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+          </li>
+        </ul>
+        <button class="feedback__button button" type="submit">Отправить отзыв</button>
+      </form>
 
     </main>
 
