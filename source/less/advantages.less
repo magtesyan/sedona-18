@@ -1,0 +1,46 @@
+.advantages {
+  position: relative;
+
+  &_bg_blue {
+    background-color: #81b3d2;
+  }
+
+  &_bg_grey {
+    background-color: #eeeeee;
+    position: relative;
+  }
+
+  &_bg_grey:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 20px;
+    right: 20px;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  &__title {
+    padding-top: 60px;
+    margin: 0;
+  }
+
+  &__description {
+    padding-bottom: 45px;
+    margin-bottom: 0;
+  }
+
+  &__photo {
+    vertical-align: middle;
+  }
+
+  &:first-child::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 37px;
+    background: url("../img/bg-triangle.svg") no-repeat 50% 50%;
+  }
+}

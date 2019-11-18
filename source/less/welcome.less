@@ -1,0 +1,28 @@
+.welcome {
+  position: relative;
+  background-color: #b4cce4;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 95%;
+
+  &_bg_index {
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+  }
+
+  &__img_index {
+    padding: 50px 20px;
+  }
+
+  &__img {
+    padding: 50px 47px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 27px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: url("../img/bg-intro-triangle-mobile.svg") no-repeat 50% 100%;
+    background-size: cover;
+  }
+}

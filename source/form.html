@@ -3,35 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
 
     <header class="page-body__page-header page-header">
       <button class="page-header__nav-toggle" type="button">Открыть меню</button>
+      <button class="page-header__nav-toggle page-header__nav-toggle_close" type="button">Закрыть меню</button>
 
       <nav class="page-header__main-nav main-nav">
-          <ul class="main-nav__list text text_color_white text_size_medium text_weight_bold">
+          <ul class="main-nav__list">
             <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+              <a class="main-nav__link text text_color_white text_size_medium text_line-height_extra text_weight_bold text_align_center text_decoration_none" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+              <a class="main-nav__link text text_color_white text_size_medium text_line-height_extra text_weight_bold text_align_center text_decoration_none" href="photo.html">Фото и видео</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+              <a class="main-nav__link text text_color_white text_size_medium text_line-height_extra text_weight_bold text_align_center text_decoration_none" href="form.html">Форма отзыва</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              <a class="main-nav__link text text_color_white text_size_medium text_line-height_extra text_weight_bold text_align_center text_decoration_none" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
       </nav>
 
       <a class="page-header__logo logo" href="#">
-        <img class="logo__image" src="https://via.placeholder.com/150x150" width="102" height="83" alt="City of Sedona emblem">
+        <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona emblem">
       </a>
 
       <div class="page-header__welcome welcome">
-        <img class="welcome__image" src="https://via.placeholder.com/150x150" width="282" height="214" alt="Welcome to Sedona">
+        <img class="welcome__img" src="img/text-sedona.svg" width="229" height="39" alt="Welcome to Sedona">
       </div>
 
       <h1 class="page-header__title text text_color_black text_size_medium text_weight_bold">Оставьте свой отзыв</h1>
@@ -129,7 +131,7 @@
     </main>
 
     <footer class="page-body__page-footer page-footer">
-      <a class="page-footer__hash text text_color_black text_size_big text_weight_bold" href="#">#visitsedona</a>
+      <a class="page-footer__hash text text_color_black text_size_big text_line-height_big text_weight_bold text_align_center" href="#">#visitsedona</a>
 
       <ul class="page-footer__social__list social">
         <li class="social__item">
@@ -143,7 +145,7 @@
         </li>
       </ul>
 
-      <p class="page-footer__copyright copyright text text_color_black text_size_small">Разработано:
+      <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center">Разработано:
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </p>
 
