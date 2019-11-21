@@ -1,7 +1,10 @@
 .advantages {
   position: relative;
+  padding-top: 10px;
+  padding-bottom: 1px;
 
   &_bg_blue {
+    padding-bottom: 0;
     background-color: #81b3d2;
   }
 
@@ -20,18 +23,8 @@
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  &__title {
-    padding-top: 60px;
-    margin: 0;
-  }
-
-  &__description {
-    padding-bottom: 45px;
-    margin-bottom: 0;
-  }
-
-  &__photo {
-    vertical-align: middle;
+  &:first-child {
+    padding-top: 50px;
   }
 
   &:first-child::after {
@@ -43,4 +36,12 @@
     height: 37px;
     background: url("../img/bg-triangle.svg") no-repeat 50% 50%;
   }
+}
+
+.advantages__description {
+  margin-bottom: 30px;
+}
+
+.advantages__photo {
+  display: block;
 }
