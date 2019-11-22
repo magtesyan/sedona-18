@@ -3,39 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
 
     <header class="page-body__page-header page-header">
       <button class="page-header__nav-toggle" type="button">Открыть меню</button>
+      <button class="page-header__nav-toggle page-header__nav-toggle_close" type="button">Закрыть меню</button>
 
       <nav class="page-header__main-nav main-nav">
-          <ul class="main-nav__list text text_color_white text_size_medium text_weight_bold">
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="index.html">Главная</a>
+          <ul class="main-nav__list nav-list list-reset text text_color_white text_size_medium text_line-height_extra text_weight_bold text_align_center text_decoration_none">
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link" href="index.html">Главная</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="photo.html">Фото и видео</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link" href="photo.html">Фото и видео</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="form.html">Форма отзыва</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link" href="form.html">Форма отзыва</a>
             </li>
-            <li class="main-nav__item">
-              <a class="main-nav__link" href="https://htmlacademy.ru/">HTML Academy</a>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link" href="https://htmlacademy.ru/">HTML Academy</a>
             </li>
           </ul>
       </nav>
 
       <a class="page-header__logo logo" href="#">
-        <img class="logo__image" src="https://via.placeholder.com/150x150" width="102" height="83" alt="City of Sedona emblem">
+        <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona emblem">
       </a>
 
       <div class="page-header__welcome welcome">
-        <img class="welcome__image" src="https://via.placeholder.com/150x150" width="282" height="214" alt="Welcome to Sedona">
+        <img class="welcome__img" src="img/text-sedona.svg" width="229" height="39" alt="Welcome to Sedona">
       </div>
 
-      <h1 class="page-header__title text text_color_black text_size_medium text_weight_bold">Оставьте свой отзыв</h1>
-      <p class="page-header__intro text text_color_black text_size_small">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      <h1 class="page-header__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Оставьте свой отзыв</h1>
+      <p class="page-header__intro text text_color_black text_size_small text_line-height_medium text_align_center">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
 
     </header>
 
@@ -43,95 +45,95 @@
       <form class="page-main__feedback-form feedback-form" method="get" action="https://echo.htmlacademy.ru">
 
         <div class="feedback-form__fieldset feedback-fieldset">
-          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_weight_bold">Представтесь:</h2>
-          <ul class="feedback-fieldset__input-list input-list">
+          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Представтесь:</h2>
+          <ul class="feedback-fieldset__input-list input-list list-reset">
             <li class="input-list__item input-item">
-              <label class="input-item__label text text_color_black text_size_small" for="first-name">Имя*:</label>
-              <input class="input-item__field input-item__field_first-name text text_color_black text_size_medium text_weight_bold text_decoration_normal" type="text" id="first-name" placeholder="Петр" required>
+              <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="first-name">Имя*:</label>
+              <input class="input-item__field field field_first-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="first-name" placeholder="Петр" required>
             </li>
             <li class="input-list__item input-item">
-              <label class="input-item__label text text_color_black text_size_small" for="second-name">Фамилия*:</label>
-              <input class="input-item__field input-item__field_second-name text text_color_black text_size_medium text_weight_bold text_decoration_normal" type="text" id="second-name" placeholder="Иванов" required>
+              <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="second-name">Фамилия*:</label>
+              <input class="input-item__field field field_second-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="second-name" placeholder="Иванов" required>
             </li>
             <li class="input-list__item input-item">
-              <label class="input-item__label text text_color_black text_size_small" for="middle-name">Отчество:</label>
-              <input class="input-item__field input-item__field_middle-name text text_color_black text_size_medium text_weight_bold text_decoration_normal" type="text" id="middle-name" placeholder="Александрович">
+              <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="middle-name">Отчество:</label>
+              <input class="input-item__field field field_middle-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="middle-name" placeholder="Александрович">
             </li>
           </ul>
         </div>
 
         <div class="feedback-form__fieldset feedback-fieldset">
-          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_weight_bold">Контактная информация:</h2>
-          <ul class="feedback-fieldset__input-list input-list">
+          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Контактная информация:</h2>
+          <ul class="feedback-fieldset__input-list input-list list-reset">
             <li class="input-list__item input-item">
-              <label class="input-item__label text text_color_black text_size_small" for="phone-number">Контактный телефон*:</label>
-              <input class="input-item__field input-item__field_phone-number text text_color_black text_size_medium text_weight_bold text_decoration_normal" id="phone-number" placeholder="Введите телефон" required>
+              <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="phone-number">Контактный телефон*:</label>
+              <input class="input-item__field field field_phone-number text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="phone-number" placeholder="Введите телефон" required>
             </li>
             <li class="input-list__item input-item">
               <label class="input-item__label text text_color_black text_size_small" for="email">Электронная почта*:</label>
-              <input class="input-item__field input-item__field_email text text_color_black text_size_medium text_weight_bold text_decoration_normal" id="email" placeholder="Введите e-mail" required>
+              <input class="input-item__field field field_email text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="email" placeholder="Введите e-mail" required>
             </li>
           </ul>
         </div>
 
         <div class="feedback-form__fieldset feedback-fieldset">
-          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_weight_bold">Ваше общее впечатление:</h2>
-          <ul class="feedback-fieldset__input-list input-list">
+          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Ваше общее впечатление:</h2>
+          <ul class="feedback-fieldset__input-list input-list list-reset">
             <li class="input-list__item input-item">
-              <input class="input-item__field input-item__field_radio" type="radio" id="positive" name="impression-radio" value="positive" checked>
-              <label class="input-item__label input-item__label_radio text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="positive">Скорее положительное</label>
+              <input class="input-item__field field field_radio" type="radio" id="positive" name="impression-radio" value="positive" checked>
+              <label class="input-item__label input-item__label_radio text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="positive">Скорее положительное</label>
             </li>
             <li class="input-list__item input-item">
-              <input class="input-item__field input-item__field_radio" type="radio" id="negative" name="impression-radio" value="negative">
-              <label class="input-item__label input-item__label_radio text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="negative">Скорее отрицательное</label>
+              <input class="input-item__field field field_radio" type="radio" id="negative" name="impression-radio" value="negative">
+              <label class="input-item__label input-item__label_radio text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="negative">Скорее отрицательное</label>
             </li>
             <li class="input-list__item input-item">
-              <input class="input-item__field input-item__field_radio" type="radio" id="neutral" name="impression-radio" value="neutral">
-              <label class="input-item__label input-item__label_radio text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="neutral">Скорее положительное</label>
-            </li>
-          </ul>
-        </div>
-
-        <div class="feedback-form__fieldset feedback-fieldset">
-          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_weight_bold">Посещенные достопримечательности:</h2>
-          <ul class="feedback-fieldset__input-list input-list">
-            <li class="input-list__item input-item">
-              <input class="input-item__field input-item__field_checkbox" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked>
-              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="devil-bridge">Мост дьявола</label>
-            </li>
-            <li class="input-list__item input-item">
-              <input class="input-item__field input-item__field_checkbox" type="checkbox" id="mountain-bell" name="visited-checkbox" value="mountain-bell" checked>
-              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="mountain-bell">Гора-Колокол</label>
-            </li>
-            <li class="input-list__item input-item">
-              <input class="input-item__field input-item__field_checkbox" type="checkbox" id="slide-park" name="visited-checkbox" value="slide-park" checked>
-              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="slide-park">Слайд-парк</label>
-            </li>
-            <li class="input-list__item input-item">
-              <input class="input-item__field input-item__field_checkbox" type="checkbox" id="red-rocks" name="visited-checkbox" value="red-rocks">
-              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_weight_bold text_decoration_normal" for="red-rocks">Красные скалы</label>
+              <input class="input-item__field field field_radio" type="radio" id="neutral" name="impression-radio" value="neutral">
+              <label class="input-item__label input-item__label_radio text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="neutral">Скорее положительное</label>
             </li>
           </ul>
         </div>
 
         <div class="feedback-form__fieldset feedback-fieldset">
-          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_weight_bold">Опишите свои эмоции:</h2>
-          <ul class="feedback-fieldset__input-list input-list">
+          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Посещенные достопримечательности:</h2>
+          <ul class="feedback-fieldset__input-list input-list list-reset">
             <li class="input-list__item input-item">
-              <textarea class="input-item__field input-item__field_textarea text text_color_black text_size_medium text_weight_bold" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+              <input class="input-item__field field field_checkbox" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked>
+              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="devil-bridge">Мост дьявола</label>
+            </li>
+            <li class="input-list__item input-item">
+              <input class="input-item__field field field_checkbox" type="checkbox" id="mountain-bell" name="visited-checkbox" value="mountain-bell" checked>
+              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="mountain-bell">Гора-Колокол</label>
+            </li>
+            <li class="input-list__item input-item">
+              <input class="input-item__field field field_checkbox" type="checkbox" id="slide-park" name="visited-checkbox" value="slide-park" checked>
+              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="slide-park">Слайд-парк</label>
+            </li>
+            <li class="input-list__item input-item">
+              <input class="input-item__field field field_checkbox" type="checkbox" id="red-rocks" name="visited-checkbox" value="red-rocks">
+              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="red-rocks">Красные скалы</label>
             </li>
           </ul>
         </div>
 
-        <button class="feedback-form__button button" type="submit">Отправить отзыв</button>
+        <div class="feedback-form__fieldset feedback-fieldset">
+          <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Опишите свои эмоции:</h2>
+          <ul class="feedback-fieldset__input-list input-list list-reset">
+            <li class="input-list__item input-item">
+              <textarea class="input-item__field field field_textarea text text_size_medium text_line-height_big text_weight_bold text_transform_normal" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
+            </li>
+          </ul>
+        </div>
+
+        <button class="feedback-form__button button text text_color_white text_size_medium text_line-height_big text_weight_bold text_align_center text_decoration_none" type="submit">Отправить отзыв</button>
       </form>
 
     </main>
 
     <footer class="page-body__page-footer page-footer">
-      <a class="page-footer__hash text text_color_black text_size_big text_weight_bold" href="#">#visitsedona</a>
+      <a class="page-footer__hash text text_color_black text_size_big text_line-height_big text_weight_bold text_align_center" href="#">#visitsedona</a>
 
-      <ul class="page-footer__social__list social">
+      <ul class="page-footer__social__list social list-reset">
         <li class="social__item">
           <a class="social__link" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
         </li>
@@ -143,7 +145,7 @@
         </li>
       </ul>
 
-      <p class="page-footer__copyright copyright text text_color_black text_size_small">Разработано:
+      <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center">Разработано:
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
       </p>
 
