@@ -1,9 +1,21 @@
 .details {
   padding-top: 10px;
-
   background-color: #ffffff;
 }
 
 .details__description {
   margin-left: 70px;
+}
+
+@media (min-width: @tablet-width) {
+  .details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    margin: auto;
+  }
+
+  .details__item {
+    width: 33%;
+  }
 }

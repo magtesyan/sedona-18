@@ -1,4 +1,14 @@
 .features {
+  display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .features {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+  }
 }
