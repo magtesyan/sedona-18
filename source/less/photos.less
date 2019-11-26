@@ -1,0 +1,17 @@
+.photos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  flex-grow: 1;
+}
+
+.photos__item {
+  margin: auto;
+}
+
+@media (min-width: @tablet-width) {
+  .photos__item {
+    margin: 0;
+  }
+}
