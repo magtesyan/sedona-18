@@ -45,9 +45,9 @@
     <main class="page-body__page-main page-main">
       <form class="page-main__feedback-form feedback-form" method="get" action="https://echo.htmlacademy.ru">
 
-        <div class="feedback-form__fieldset feedback-fieldset">
+        <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_name">
           <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Представтесь:</h2>
-          <ul class="feedback-fieldset__input-list input-list list-reset">
+          <ul class="feedback-fieldset__input-list input-list input-list_name list-reset">
             <li class="input-list__item input-item">
               <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="first-name">Имя*:</label>
               <input class="input-item__field field field_first-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="first-name" placeholder="Петр" required>
@@ -63,9 +63,9 @@
           </ul>
         </div>
 
-        <div class="feedback-form__fieldset feedback-fieldset">
+        <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_contacts">
           <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Контактная информация:</h2>
-          <ul class="feedback-fieldset__input-list input-list list-reset">
+          <ul class="feedback-fieldset__input-list input-list input-list_contacts list-reset">
             <li class="input-list__item input-item">
               <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="phone-number">Контактный телефон*:</label>
               <input class="input-item__field field field_phone-number text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="phone-number" placeholder="Введите телефон" required>
@@ -77,7 +77,7 @@
           </ul>
         </div>
 
-        <div class="feedback-form__fieldset feedback-fieldset">
+        <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_impression">
           <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Ваше общее впечатление:</h2>
           <ul class="feedback-fieldset__input-list input-list list-reset">
             <li class="input-list__item input-item">
@@ -95,9 +95,9 @@
           </ul>
         </div>
 
-        <div class="feedback-form__fieldset feedback-fieldset">
+        <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_visited">
           <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Посещенные достопримечательности:</h2>
-          <ul class="feedback-fieldset__input-list input-list list-reset">
+          <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_visited input-list input-list_visited list-reset">
             <li class="input-list__item input-item">
               <input class="input-item__field field field_checkbox" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked>
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="devil-bridge">Мост дьявола</label>
@@ -117,7 +117,7 @@
           </ul>
         </div>
 
-        <div class="feedback-form__fieldset feedback-fieldset">
+        <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_emotions">
           <h2 class="feedback-fieldset__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Опишите свои эмоции:</h2>
           <ul class="feedback-fieldset__input-list input-list list-reset">
             <li class="input-list__item input-item">
@@ -127,6 +127,7 @@
         </div>
 
         <button class="feedback-form__button button text text_color_white text_size_medium text_line-height_big text_weight_bold text_align_center text_decoration_none" type="submit">Отправить отзыв</button>
+        <p class=" feedback-form__fields-required text text_color_black text_size_small text_line-height_big text_weight_normal text_align_right">* - Обязательные поля</p>
       </form>
 
     </main>
@@ -134,7 +135,7 @@
     <footer class="page-body__page-footer page-footer">
       <a class="page-footer__hash text text_color_black text_size_big text_line-height_big text_weight_bold text_align_center" href="#">#visitsedona</a>
 
-      <ul class="page-footer__social__list social list-reset">
+      <ul class="page-footer__social-list social list-reset">
         <li class="social__item">
           <a class="social__link" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
         </li>

@@ -1,3 +1,41 @@
-.input-list {
-  margin-left: 20px;
+.input-list li {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .input-list_contacts li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-list_visited {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input-list_visited li {
+    width: 50%;
+  }
+
+  .input-list_contacts label {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input-list_visited li {
+    width: 25%;
+  }
+
+  .input-list_contacts {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .input-list_contacts li {
+    //display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    width: 45%;
+  }
 }

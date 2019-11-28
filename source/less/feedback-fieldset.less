@@ -1,3 +1,31 @@
 .feedback-fieldset {
+  display: flex;
+  flex-direction: column;
   border-top: 1px solid #e5e5e5;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback-fieldset {
+
+    width: 100%;
+
+    &_impression {
+      order: -1;
+      width: 50%;
+    }
+
+    &_name {
+      width: 50%;
+    }
+  }
+
+  .feedback-fieldset__input-list_visited {
+    margin: 0 150px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback-fieldset__input-list_visited {
+    margin: 0;
+  }
 }
