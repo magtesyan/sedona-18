@@ -4,15 +4,16 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page-body">
 
     <header class="page-body__page-header page-header">
-      <button class="page-header__nav-toggle page-header__nav-toggle_open" type="button" aria-label="Открыть меню">
+      <button class="visually-hidden page-header__nav-toggle page-header__nav-toggle_open" type="button" aria-label="Открыть меню">
         <img src="img/icon-menu.svg" width="23" height="21">
       </button>
-      <button class="page-header__nav-toggle page-header__nav-toggle_close" type="button" aria-label="Закрыть меню">
+      <button class="visually-hidden page-header__nav-toggle page-header__nav-toggle_close" type="button" aria-label="Закрыть меню">
         <img src="img/icon-cross.svg" width="23" height="21">
       </button>
 
@@ -40,7 +41,7 @@
       <h1 class="visually-hidden">Welcome to Sedona</h1>
 
       <div class="page-header__welcome welcome welcome_bg_index">
-        <img class="welcome__img_index" src="img/text-sedona-index.svg" width="282" height="214" alt="Welcome to Sedona">
+        <img class="welcome__img_index" src="img/text-sedona-index.svg" width="280" height="214" alt="Welcome to Sedona">
       </div>
 
       <p class="page-header__slogan text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Седона - небольшой городок&nbsp;в&nbsp;Аризоне, заслуживающий большего!</p>
@@ -60,15 +61,15 @@
           <img class="advantages__photo" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
           <ul class="advantages__detailed-list details list-reset">
             <li class="details__item">
-              <h3 class="details__title text text_size_medium text_line-height_big text_line-height_big text_weight_bold text_align_center">Жилье</h3>
+              <h3 class="details__title text text_size_medium text_line-height_big text_line-height_big text_weight_bold">Жилье</h3>
               <p class="details__description text text_size_small text_line-height_small text_align_left">Рекомендуем пожить в настоящем&nbsp;мотеле,&nbsp;все&nbsp;как&nbsp;в кино!</p>
             </li>
             <li class="details__item">
-              <h3 class="details__title text text_size_medium text_line-height_big text_weight_bold text_align_center">Сувениры</h3>
+              <h3 class="details__title text text_size_medium text_line-height_big text_weight_bold">Сувениры</h3>
               <p class="details__description text text_size_small text_line-height_small text_align_left">Не только китайского, но и местного&nbsp;производства!</p>
             </li>
             <li class="details__item">
-              <h3 class="details__title text text_size_medium text_line-height_big text_weight_bold text_align_center">Еда</h3>
+              <h3 class="details__title text text_size_medium text_line-height_big text_weight_bold">Еда</h3>
               <p class="details__description text text_size_small text_line-height_small text_align_left">Всегда заказывайте фирменный&nbsp;бургер,&nbsp;вы&nbsp;не разочаруетесь!</p>
             </li>
           </ul>
@@ -86,21 +87,21 @@
           <div class="advantages__main">
             <h2 class="advantages__title text text_size_medium text_line-height_big text_weight_bold text_align_center">Небольшая площадь</h2>
             <p class="advantages__number text text_size_small text_line-height_small text_align_center">- №3 -</p>
-            <p class="advantages__description text text_size_small text_line-height_small text_align_center">Все интересные места находятся очень близко</p>
+            <p class="advantages__description advantages__description_grey text text_size_small text_line-height_small text_align_center">Все интересные места находятся очень близко</p>
           </div>
         </li>
         <li class="features__item advantages advantages_bg_grey">
           <div class="advantages__main">
             <h2 class="advantages__title text text_size_medium text_line-height_big text_weight_bold text_align_center">Красивая дорога</h2>
             <p class="advantages__number text text_size_small text_line-height_small text_align_center">- №4 -</p>
-            <p class="advantages__description text text_size_small text_line-height_small text_align_center">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
+            <p class="advantages__description advantages__description_grey text text_size_small text_line-height_small text_align_center">Ехать в Седону из Лас-Вегаса совсем не скучно</p>
           </div>
         </li>
         <li class="features__item advantages advantages_bg_grey">
           <div class="advantages__main">
             <h2 class="advantages__title text text_size_medium text_line-height_big text_weight_bold text_align_center">Мало туристов</h2>
             <p class="advantages__number text text_size_small text_line-height_small text_align_center">- №5 -</p>
-            <p class="advantages__description text text_size_small text_line-height_small text_align_center">Большинство едет в Гранд-Каньон и толпится там</p>
+            <p class="advantages__description advantages__description_grey text text_size_small text_line-height_small text_align_center">Большинство едет в Гранд-Каньон и толпится там</p>
           </div>
         </li>
       </ol>
@@ -109,7 +110,7 @@
         <div class="hotel__search search-hotel">
           <p class="search-hotel__title text text_color_black text_size_medium text_line-height_big text_weight_bold text_align_center">Заинтересовались?</p>
           <p class="search-hotel__intro text text_color_black text_size_small text_line-height_medium text_align_center">Укажите предполагаемые даты поездки,&nbsp;и&nbsp;мы покажем вам лучшие предложения гостиниц в седоне</p>
-          <a class="search-hotel__search-button button text text_color_white text_size_medium text_line-height_big text_weight_bold text_align_center text_decoration_none" href="#">Найти гостиницу</a>
+          <a class="search-hotel__search-button button text text_color_white text_size_big text_line-height_big text_weight_bold text_align_center text_decoration_none" href="#">Найти гостиницу</a>
         </div>
         <div class="hotel__map map">
           <a class="map__image-link" href="#">
@@ -121,22 +122,42 @@
     </main>
 
     <footer class="page-body__page-footer page-footer">
-      <a class="page-footer__hash text text_color_black text_size_big text_line-height_big text_weight_bold text_align_center" href="#">#visitsedona</a>
+      <a class="page-footer__hash text text_color_black text_size_big text_line-height_big text_weight_bold text_align_center text_decoration_none" href="#">#visitsedona</a>
 
       <ul class="page-footer__social-list social list-reset">
         <li class="social__item">
-          <a class="social__link" href="https://twitter.com/htmlacademy_ru">Мы в Твиттере</a>
+          <a class="social__link social-link" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663" enable-background="new 0 0 17.5 14.663" xml:space="preserve">
+              <g id="W6EeEF_1_">
+                <g>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M11.283,0.153c1.736-0.484,3.074,0.264,3.685,1.15 c0.694-0.225,1.372-0.47,2.072-0.69c-0.004,0.841-0.538,1.478-0.883,1.728C16.861,2.506,17.5,1.86,17.5,1.86 c-0.175,0.977-1.035,1.746-1.611,1.977C15.65,10.429,12.617,14.793,5.507,14.66c-0.538,0,0.077,0-0.46,0 c-0.422,0-4.29-0.45-5.047-1.843c2.341,0.192,4.011-0.412,4.835-1.15c-0.989-0.293-2.761-0.464-3.07-2.881 c0.362,0.105,0.583,0.223,1.228,0.117C1.757,8.067,0.385,7.366,0.461,5.218c0.294,0.319,1.1,0.523,1.381,0.461 c-0.725-0.235-2.03-3.281-0.921-4.836C2.794,2.655,4.769,4.364,8.29,4.528C8.506,2.288,9.461,0.788,11.283,0.153z"/>
+                </g>
+              </g>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбук</a>
+          <a class="social__link social-link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фейсбук">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="8.672px" height="18.944px" viewBox="0 0 8.672 18.944" enable-background="new 0 0 8.672 18.944" xml:space="preserve">
+              <path d="M6.275,3.356c0.799,0,1.599,0,2.398,0c0-1.119,0-2.237,0-3.356c-0.959,0-1.92,0-2.878,0C2.656,0.181,1.54,2.387,1.948,6.114 H0v3.518h1.959c0,3.104,0,6.208,0,9.312c1.279,0,2.559,0,3.837,0c0-3.104,0-6.208,0-9.312h2.857V6.114H5.787 C5.765,5.069,5.75,3.709,6.275,3.356z"/>
+            </svg>
+          </a>
         </li>
         <li class="social__item">
-          <a class="social__link" href="https://www.youtube.com/htmlacademy">Мы в Ютуб</a>
+          <a class="social__link social-link" href="https://www.youtube.com/htmlacademy" aria-label="Мы в ютуб">
+            <svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015" enable-background="new 0 0 19.979 14.015" xml:space="preserve">
+              <path d="M17.145,0H2.835C1.275,0,0,1.275,0,2.835v8.345c0,1.56,1.275,2.835,2.835,2.835h14.31c1.56,0,2.835-1.275,2.835-2.835V2.835 C19.979,1.275,18.704,0,17.145,0z M7.036,10.392V3.623l6.769,3.384L7.036,10.392z"/>
+            </svg>
+          </a>
         </li>
       </ul>
 
-      <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center">Разработано:
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+      <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center text_align_center">Разработано:
+        <a class="copyright__link copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML academy">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60">
+            <path d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+          </svg>
+        </a>
       </p>
 
     </footer>

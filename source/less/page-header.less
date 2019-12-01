@@ -4,10 +4,36 @@
   margin: 0 auto;
 }
 
+.page-header__main-nav {
+  margin-bottom: 55px;
+}
+
 .page-header__logo {
-  margin: auto;
+  z-index: 1;
+  position: absolute;
+  top: 224px;
+  left: 50%;
+  transform: translateX(-50px);
 }
 
 .page-header__nav-toggle {
   position: absolute;
+}
+
+.page-header__welcome {
+  margin-bottom: 21px;
+}
+
+.page-header__slogan {
+  margin-bottom: 13px;
+}
+
+.page-header__intro {
+  margin-bottom: 5px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header__logo {
+    top: 0;
+  }
 }

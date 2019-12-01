@@ -1,11 +1,10 @@
 .welcome {
-  margin: 0 auto;
   position: relative;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 95%;
   background-color: #b4cce4;
 
   &_bg_index {
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 50%;
+    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
   }
 
   &::after {
@@ -15,13 +14,15 @@
     bottom: 0;
     left: 0;
     right: 0;
+    width: 100%;
     background: url("../img/bg-intro-triangle-mobile.svg") no-repeat 50% 100%;
     background-size: cover;
   }
 }
 
 .welcome__img_index {
-  margin: 50px 20px;
+  display: block;
+  margin: 88px auto;
 }
 
 .welcome__img {
