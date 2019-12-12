@@ -1,11 +1,7 @@
 .welcome {
   position: relative;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 95%;
-  background-color: #b4cce4;
-
-  &_bg_index {
-    background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0%;
-  }
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
+  //background-color: #b4cce4;
 
   &::after {
     content: "";
@@ -26,5 +22,35 @@
 }
 
 .welcome__img {
-  margin: 50px 47px;
+  margin: 50px 46px;
+}
+
+@media (min-width: @tablet-width) {
+  .welcome {
+    padding-bottom: 131px;
+    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 99%;
+
+    &::after {
+      height: 60px;
+      bottom: 0;
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat 50% 100%;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .welcome {
+    padding-bottom: 143px;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 99%;
+
+    &_bg_index {
+      padding-bottom: 130px;
+    }
+
+    &::after {
+      height: 60px;
+      bottom: 0;
+      background: url("../img/bg-intro-triangle-desktop.svg") no-repeat 50% 100%;
+    }
+  }
 }

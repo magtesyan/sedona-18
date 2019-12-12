@@ -1,13 +1,66 @@
 .input-item {
-  margin-bottom: 20px;
+  &_impression {
+    padding: 10px 0;
+  }
+
+  &_visited {
+    padding: 16px 0;
+  }
 }
 
 .input-item__label {
+  margin: auto 0;
   margin-right: 15px;
-  margin-bottom: 15px;
+
+  &_phone,
+  &_email {
+    margin-bottom: 7px;
+  }
+
+  &_mid-name {
+    margin-right: 20px;
+  }
 }
 
 .input-item__field {
   border: none;
-  background-color: #f2f2f2;
+  background-color: green; /*#f2f2f2*/
+
+  &_phone {
+    margin-bottom: 10px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input-item {
+    &_impression {
+      padding: 15px 0;
+    }
+
+    &_visited {
+      padding: 20px 0;
+    }
+  }
+
+  .input-item__field {
+    &_phone {
+      margin-bottom: 22px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input-item__label {
+    &_word1 {
+      display: none;
+    }
+
+    &_phone {
+      margin-top: 16px;
+    }
+
+    &_email {
+      margin-bottom: 14px;
+    }
+  }
 }

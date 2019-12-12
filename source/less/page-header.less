@@ -1,7 +1,8 @@
 .page-header {
   display: flex;
   flex-direction: column;
-  margin: 0 auto;
+  background-color: #ffffff;
+  max-width: @desktop-width;
 }
 
 .page-header__main-nav {
@@ -28,12 +29,59 @@
   margin-bottom: 13px;
 }
 
+.page-header__title {
+  margin-top: 17px;
+  margin-bottom: 11px;
+}
+
 .page-header__intro {
-  margin-bottom: 5px;
+  margin-bottom: 19px;
+
+  &_index {
+    margin-bottom: 5px;
+  }
 }
 
 @media (min-width: @tablet-width) {
+  .page-header {
+    padding-bottom: 4px;
+  }
+
+  .page-header__main-nav {
+    margin-bottom: 1px;
+  }
+
   .page-header__logo {
     top: 0;
+  }
+
+  .page-header__slogan {
+    width: 600px;
+    margin: 27px auto 14px auto;
+  }
+
+  .page-header__title {
+    margin-top: 55px;
+    margin-bottom: 18px;
+  }
+
+  .page-header__intro {
+    margin-bottom: 47px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header__title {
+    margin-top: 91px;
+  }
+
+  .page-header__intro {
+    margin: 13px auto 33px auto;
+    width: 440px;
+
+    &_index {
+      width: 500px;
+      margin-bottom: 48px;
+    }
   }
 }

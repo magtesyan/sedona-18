@@ -1,14 +1,13 @@
 .page-main {
   display: flex;
   flex-direction: column;
+  background-color: #ffffff;
+  max-width: @desktop-width;
+  margin: auto;
 }
 
 .page-main__video {
   margin: auto;
-}
-
-.page-main__feedback-form {
-  margin: 0 20px;
 }
 
 .page-main__features {
@@ -16,7 +15,15 @@
   margin-bottom: 10px;
 }
 
+.page-main__photos {
+  margin-top: 9px;
+}
+
 @media (min-width: @tablet-width) {
+  .page-main__features {
+    margin-bottom: 26px;
+  }
+
   .page-main__feedback-form {
     margin: 0 60px;
   }
@@ -24,6 +31,10 @@
 
 @media (min-width: @desktop-width) {
   .page-main__feedback-form {
-    margin: 0 240px;
+    margin: 0 120px;
+  }
+
+  .page-main__features {
+    margin-bottom: 40px;
   }
 }

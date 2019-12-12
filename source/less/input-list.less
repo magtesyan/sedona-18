@@ -2,6 +2,22 @@
   display: flex;
 }
 
+.input-list_contacts li {
+  flex-direction: column;
+}
+
+.input-list__item {
+  margin-bottom: 22px;
+
+  &_phone {
+    margin-bottom: 3px;
+  }
+
+  &_email {
+    margin-bottom: 26px;
+  }
+}
+
 @media (min-width: @tablet-width) {
   .input-list_contacts li {
     display: flex;
@@ -29,7 +45,6 @@
 
   .input-list_contacts {
     display: flex;
-    justify-content: space-between;
   }
 
   .input-list_contacts li {

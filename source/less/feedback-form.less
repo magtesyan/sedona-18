@@ -3,13 +3,31 @@
   flex-direction: column;
 }
 
+.feedback-form__fieldset {
+  margin-bottom: 4px;
+}
+
 .feedback-form__fields-required {
-  margin-left: 150px;
+  margin-left: auto;
+  display: none;
+}
+
+.feedback-form__button {
+  margin-bottom: 42px;
 }
 
 @media (min-width: @tablet-width) {
   .feedback-form {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+
+  .feedback-form__fields-required {
+    display: inline-block;
+    margin-top: 18px;
+  }
+
+  .feedback-form__button {
+    margin-bottom: 67px;
   }
 }

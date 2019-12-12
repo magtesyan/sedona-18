@@ -1,6 +1,11 @@
 .page-footer {
   display: flex;
   flex-direction: column;
+  padding-top: 32px;
+  background-color: #ffffff;
+  max-width: @desktop-width;
+  margin: auto;
+  box-sizing: border-box;
 }
 
 .page-footer__hash {
@@ -8,14 +13,25 @@
   margin-bottom: 33px;
 }
 
+.page-footer__social-list {
+  margin: auto;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 26px 60px 0 60px;
+  }
+
+  .page-footer__hash {
+    margin-top: 14px;
   }
 }
 
-.page-footer__social-list {
-  margin: auto;
+@media (min-width: @desktop-width) {
+  .page-footer {
+    padding: 29px 125px 0 120px;
+  }
 }
