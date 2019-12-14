@@ -1,8 +1,40 @@
 .controls {
   display: flex;
   justify-content: space-between;
+  padding: 22px;
+  box-sizing: border-box;
+  font-size: 0;
+  z-index: 1;
+  background-color: #f2f2f2;
 }
 
 .controls__refresh {
   margin-right: 135px;
+}
+
+.controls__range {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  min-height: 45px;
+  top: -45px;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 0 22px;
+}
+
+@media (min-width: @tablet-width) {
+  .controls {
+    height: 93px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+
+  .controls__range {
+    position: static;
+    min-height: 0;
+  }
+
+  .controls__refresh {
+    margin-right: 0;
+  }
 }
