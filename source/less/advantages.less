@@ -46,18 +46,20 @@
   margin: auto;
 }
 
-.advantages__title,
-.advantages__description {
-  width: 280px;
-  margin: auto;
-}
-
 .advantages__title {
+  width: 260px;
+  margin: auto;
   margin-bottom: 10px;
 }
 
 .advantages__description {
+  width: 260px;
+  margin: auto;
   margin-bottom: 40px;
+
+  &_real-city {
+    width: 264px;
+  }
 }
 
 .advantages__number {
@@ -134,7 +136,7 @@
 
 @media (min-width: @desktop-width) {
   .advantages_bg_grey .advantages__main {
-      margin-top: 45px;
+    margin-top: 45px;
   }
 
   .advantages__main {
@@ -143,5 +145,13 @@
 
   .advantages__description {
     width: 280px;
+
+    &_square {
+      width: 285px;
+    }
+
+    &_bridge {
+      width: 220px;
+    }
   }
 }
