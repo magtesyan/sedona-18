@@ -51,12 +51,13 @@
     text-transform: none;
   }
 
-  &_align_center {
+  &_align_center,
+  &_align_center-left,
+  &_align_center-center {
     text-align: center;
   }
 
-  &_align_left,
-  &_align_left-center {
+  &_align_left {
     text-align: left;
   }
 
@@ -79,12 +80,20 @@
       font-size: 30px;
     }
 
+    &_size_big-extra {
+      font-size: 30px;
+    }
+
     &_line-height_extra-big {
       line-height: 26px;
     }
 
     &_align_left-center {
       text-align: center;
+    }
+
+    &_align_center-left {
+      text-align: left;
     }
   }
 }
