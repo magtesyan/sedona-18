@@ -1,3 +1,62 @@
-.input-list {
-  margin-left: 20px;
+.input-list li {
+  display: flex;
+}
+
+.input-list_contacts li {
+  flex-direction: column;
+}
+
+.input-list__item {
+  margin-bottom: 22px;
+
+  &_phone {
+    margin-bottom: 3px;
+  }
+
+  &_email {
+    margin-bottom: 26px;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .input-list_contacts li {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-list_visited {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .input-list_visited li {
+    width: 50%;
+  }
+
+  .input-list_contacts label {
+    width: 100%;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .input-list_visited li {
+    width: 25%;
+  }
+
+  .input-list_contacts {
+    display: flex;
+  }
+
+  .input-list_contacts li {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+
+  .input-list_contacts .label_phone {
+    width: 80px;
+  }
+
+  .input-list_contacts .label_email {
+    width: 160px;
+  }
 }

@@ -1,8 +1,20 @@
 .page-body {
   margin: 0 auto;
   min-width: 320px;
+  background-color: green;
+}
+
+.page-body__page-header {
+  position: relative;
+  margin: 0 auto;
 }
 
 .page-body__page-main {
-  margin-bottom: 50px;
+  margin-top: 0;
+}
+
+@media (min-width: @tablet-width) {
+  .page-body__page-header {
+    margin: 0 auto;
+  }
 }

@@ -1,20 +1,76 @@
 .details {
-  padding-top: 10px;
+  padding-top: 13px;
+  padding-bottom: 8px;
   background-color: #ffffff;
 }
 
 .details__description {
+  margin-top: 0;
+  margin-left: 70px;
+  margin-right: 20px;
+  margin-bottom: 28px;
+}
+
+.details__title {
+  margin-top: 23px;
+  margin-bottom: 14px;
   margin-left: 70px;
 }
 
 @media (min-width: @tablet-width) {
   .details {
     display: flex;
-    flex-grow: 1;
     margin: auto;
+    padding-top: 135px;
+    padding-bottom: 35px;
   }
 
   .details__item {
-    width: 33%;
+    width: 33.33%;
+
+    &_housing {
+      order: 1;
+    }
+
+    &_food {
+      order: 2;
+    }
+
+    &_souvenir {
+      order: 3;
+    }
+  }
+
+  .details__title {
+    margin-bottom: 20px;
+    margin-left: 5px;
+  }
+
+  .details__description {
+    margin-left: 45px;
+    margin-right: 45px;
+
+    &_food {
+      width: 159px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .details {
+    padding-bottom: 84px;
+  }
+
+  .details__description {
+    margin: auto;
+    width: 300px;
+
+    &_souvenir {
+      width: 300px;
+    }
+
+    &_souvenir-part1 {
+      display: block;
+    }
   }
 }

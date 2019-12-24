@@ -1,18 +1,7 @@
 .field {
-  width: 240px;
-  padding: 10px 20px;
-
-  &_first-name {
-    width: 190px;
-  }
-
-  &_second-name {
-    width: 153px;
-  }
-
-  &_middle-name {
-    width: 157px;
-  }
+  padding: 15px 0 15px 20px;
+  box-sizing: border-box;
+  width: 100%;
 
   &_textarea {
     height: 160px;
@@ -25,5 +14,21 @@
 
   &::placeholder {
     color: #000000;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .field {
+    padding: 13px 0 17px 20px;
+
+    &_phone-number {
+      box-sizing: border-box;
+      width: 315px;
+    }
+
+    &_email {
+      box-sizing: border-box;
+      width: 315px;
+    }
   }
 }

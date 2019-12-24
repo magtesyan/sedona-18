@@ -1,6 +1,23 @@
 .button {
-  padding: 10px 55px;
-  margin-left: 20px;
+  padding: 16px 47px;
   border: none;
   background-color: #81b3d2;
+}
+
+@media (min-width: @tablet-width) {
+  .button {
+    padding: 16px 135px;
+
+    &_feedback {
+      padding: 16px 70px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .button {
+    &_feedback {
+      padding: 16px 149px;
+    }
+  }
 }

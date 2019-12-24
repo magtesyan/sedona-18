@@ -4,16 +4,21 @@
   background-color: #81b3d2;
 }
 
+.nav-list__link {
+  margin: 1px 0;
+}
+
 @media (min-width: @tablet-width) {
   .nav-list {
     flex-direction: row;
+    background-color: #ffffff;
   }
 
   .nav-list__item {
     width: 20%;
-  }
 
-  .nav-list__item:nth-child(2) {
-    margin-right: 20%;
+    &:nth-child(2) {
+      margin-right: 20%;
+    }
   }
 }

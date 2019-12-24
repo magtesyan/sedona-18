@@ -6,15 +6,20 @@
     font-size: 14px;
   }
 
-  &_size_medium {
+  &_size_medium,
+  &_size_medium-big,
+  &_size_medium-small,
+  &_size_medium-extra {
     font-size: 18px;
   }
 
-  &_size_big {
+  &_size_big,
+  &_size_big-extra {
     font-size: 21px;
   }
 
-  &_line-height_extra {
+  &_line-height_extra,
+  &_line-height_extra-big {
     line-height: 40px;
   }
 
@@ -46,7 +51,9 @@
     text-transform: none;
   }
 
-  &_align_center {
+  &_align_center,
+  &_align_center-left,
+  &_align_center-center {
     text-align: center;
   }
 
@@ -56,5 +63,37 @@
 
   &_decoration_none {
     text-decoration: none;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .text {
+    &_size_medium-big {
+      font-size: 21px;
+    }
+
+    &_size_medium-small {
+      font-size: 14px;
+    }
+
+    &_size_medium-extra {
+      font-size: 30px;
+    }
+
+    &_size_big-extra {
+      font-size: 30px;
+    }
+
+    &_line-height_extra-big {
+      line-height: 26px;
+    }
+
+    &_align_left-center {
+      text-align: center;
+    }
+
+    &_align_center-left {
+      text-align: left;
+    }
   }
 }

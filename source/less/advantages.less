@@ -1,10 +1,9 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  //margin: auto;
   position: relative;
-  padding-top: 10px;
-  padding-bottom: 1px;
+  padding-top: 27px;
+  padding-bottom: 10px;
 
   &_bg_blue {
     padding-bottom: 0;
@@ -12,6 +11,7 @@
   }
 
   &_bg_grey {
+    padding-top: 15px;
     background-color: #eeeeee;
     position: relative;
   }
@@ -27,7 +27,7 @@
   }
 
   &:first-child {
-    padding-top: 50px;
+    padding-top: 65px;
   }
 
   &:first-child::after {
@@ -36,33 +36,85 @@
     top: 0;
     left: 0;
     right: 0;
+    width: 100%;
     height: 37px;
     background: url("../img/bg-triangle.svg") no-repeat 50% 50%;
   }
-}
-
-.advantages__description {
-  margin-bottom: 30px;
 }
 
 .advantages__photo {
   margin: auto;
 }
 
+.advantages__title {
+  width: 260px;
+  margin: auto;
+  margin-bottom: 10px;
+}
+
+.advantages__description {
+  width: 260px;
+  margin: auto;
+  margin-bottom: 40px;
+
+  &_real-city {
+    width: 264px;
+  }
+}
+
+.advantages__number {
+  margin-top: 0;
+}
+
+.advantages__main {
+  margin-top: 12px;
+}
+
+.advantages__description_grey {
+  margin-bottom: 17px;
+}
+
 @media (min-width: @tablet-width) {
   .advantages {
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 0;
+    padding-bottom: 0;
     width: 100%;
+
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:first-child::after {
+      display: none;
+    }
+
+    &_bg_grey:not(:last-child)::after {
+      display: none;
+    }
   }
 
   .advantages__main {
     width: 33%;
+    margin: 44px auto;
+  }
+
+  .advantages__title {
+    width: 155px;
     margin: auto;
+    margin-bottom: 10px;
+  }
+
+  .advantages__description {
+    width: 165px;
+    margin: auto;
+    margin-top: 20px;
   }
 
   .advantages__photo {
     width: 67%;
+    height: 256px;
   }
 
   .advantages_bg_grey {
@@ -79,5 +131,27 @@
 
   .advantages:nth-child(2) .advantages__photo {
     order: -1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .advantages_bg_grey .advantages__main {
+    margin-top: 45px;
+  }
+
+  .advantages__main {
+    margin: 51px auto;
+  }
+
+  .advantages__description {
+    width: 280px;
+
+    &_square {
+      width: 285px;
+    }
+
+    &_bridge {
+      width: 220px;
+    }
   }
 }
