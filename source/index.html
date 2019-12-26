@@ -6,6 +6,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script src="js/picturefill.js" async></script>
   </head>
   <body class="page-body">
 
@@ -58,7 +59,13 @@
             <p class="advantages__number text text_color_white text_size_small text_line-height_small text_align_center">- №1 -</p>
             <p class="advantages__description advantages__description_real-city text text_color_white text_size_small text_line-height_small text_align_center">Седона не аттракцион для туристов, там течет своя жизнь</p>
           </div>
-          <img class="advantages__photo" src="img/main-city-mobile@1x.jpg" width="320" height="260" alt="Настоящий городок">
+          <div class="advantages__photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок">
+            </picture>
+          </div>
           <ul class="advantages__detailed-list details list-reset">
             <li class="details__item details__item_housing">
               <h3 class="details__title text text_size_medium-big text_line-height_big text_weight_bold text_align_left-center">Жилье</h3>
@@ -80,7 +87,13 @@
             <p class="advantages__number text text_color_white text_size_small text_line-height_small text_align_center">- №2 -</p>
             <p class="advantages__description advantages__description_bridge text text_color_white text_size_small text_line-height_small text_align_center">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
           </div>
-          <img class="advantages__photo" src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+          <div class="advantages__photo">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg 1x, img/main-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-bridge-tablet@1x.jpg 1x, img/main-bridge-tablet@2x.jpg 2x">
+              <img src="img/main-bridge-mobile@1x.jpg" width="320" height="260" alt="Мост дьявола">
+            </picture>
+          </div>
         </li>
         <li class="features__item advantages advantages_bg_grey">
           <div class="advantages__main">
@@ -113,7 +126,7 @@
         </div>
         <div class="hotel__map map">
           <a class="map__image-link" href="#">
-            <img class="map__image" src="img/bg-map-mobile@1x.jpg" width="320" height="350" alt="Карта Седоны">
+
           </a>
         </div>
       </div>

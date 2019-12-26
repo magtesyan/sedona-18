@@ -3,6 +3,11 @@
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
   //background-color: #b4cce4;
 
+  @media (min-resolution: @retina-dppx) {
+    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 99%;
+    background-size: 768px auto;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -30,6 +35,11 @@
     padding-bottom: 131px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 99%;
 
+    @media (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 99%;
+      background-size: 768px auto;
+    }
+
     &::after {
       height: 60px;
       bottom: 0;
@@ -42,6 +52,11 @@
   .welcome {
     padding-bottom: 143px;
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 99%;
+
+    @media (min-resolution: @retina-dppx) {
+      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50% 99%;
+      background-size: cover;
+    }
 
     &_bg_index {
       padding-bottom: 130px;
