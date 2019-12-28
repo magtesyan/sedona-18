@@ -36,7 +36,11 @@
       </nav>
 
       <a class="page-header__logo logo" href="#">
-        <img class="logo__image" src="img/logo-sedona-mobile.svg" width="102" height="83" alt="City of Sedona emblem">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="City of Sedona emblem">
+        </picture>
       </a>
 
       <h1 class="visually-hidden">Welcome to Sedona</h1>
@@ -62,7 +66,7 @@
           <div class="advantages__photo">
             <picture>
               <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg 1x, img/main-city-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/main-city-tablet@1x.jpg 1x, img/main-city-tablet@2x.jpg 2x" width="512" height="256">
               <img src="img/main-city-mobile@1x.jpg" srcset="img/main-city-mobile@2x.jpg 2x" width="320" height="260" alt="Настоящий городок">
             </picture>
           </div>
