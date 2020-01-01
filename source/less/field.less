@@ -1,7 +1,9 @@
 .field {
-  padding: 15px 0 15px 20px;
+  padding: 10px 0 10px 16px;
   box-sizing: border-box;
   width: 100%;
+  border: 4px solid transparent;
+  autocomplete: off;
 
   &_textarea {
     height: 160px;
@@ -14,6 +16,13 @@
 
   &::placeholder {
     color: #000000;
+  }
+
+  &:active,
+  &:focus {
+    background-color: #ffffff;
+    outline: none;
+    border-color: #e5e5e5;
   }
 }
 

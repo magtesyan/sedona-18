@@ -54,7 +54,7 @@
     </header>
 
     <main class="page-body__page-main page-main">
-      <form class="page-main__feedback-form feedback-form" method="get" action="https://echo.htmlacademy.ru">
+      <form class="page-main__feedback-form feedback-form" method="get" action="https://echo.htmlacademy.ru" autocomplete="off">
 
         <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_name">
           <h2 class="feedback-fieldset__title feedback-fieldset__title_name text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center-left">Представтесь:</h2>
@@ -79,11 +79,15 @@
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_contacts input-list input-list_contacts list-reset">
             <li class="input-list__item input-list__item_phone input-item">
               <label class="input-item__label input-item__label_phone label_phone text text_color_black text_size_small text_line-height_big" for="phone-number"><span class="input-item__label_word1">Контактный </span>телефон*:</label>
-              <input class="input-item__field input-item__field_phone field field_phone-number text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="phone-number" placeholder="Введите телефон" required>
+              <div class="input-item__phone-wrapper">
+                <input class="input-item__field input-item__field_phone field field_phone-number text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="phone-number" placeholder="Введите телефон" required>
+              </div>
             </li>
             <li class="input-list__item input-list__item_email input-item">
               <label class="input-item__label input-item__label_email label_email text text_color_black text_size_small text_line-height_big" for="email">Электронная&nbsp;почта*:</label>
-              <input class="input-item__field input-item__field_email field field_email text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="email" placeholder="Введите e-mail" required>
+              <div class="input-item__email-wrapper">
+                <input class="input-item__field input-item__field_email field field_email text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="email" placeholder="Введите e-mail" required>
+              </div>
             </li>
           </ul>
         </div>
@@ -111,7 +115,7 @@
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_visited input-list input-list_visited list-reset">
             <li class="input-list__item input-item input-item_visited">
               <input class="input-item__field field field_checkbox" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked>
-              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="devil-bridge">Мост дьявола</label>
+              <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="devil-bridge">Мост Дьявола</label>
             </li>
             <li class="input-list__item input-item input-item_visited">
               <input class="input-item__field field field_checkbox" type="checkbox" id="mountain-bell" name="visited-checkbox" value="mountain-bell" checked>
