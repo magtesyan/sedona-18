@@ -29,22 +29,50 @@
     flex-wrap: wrap;
   }
 
-  .input-list_visited li {
-    width: 50%;
-  }
-
   .input-list_contacts label {
     width: 100%;
+  }
+
+  .input-list__item {
+    &_visited {
+      margin-bottom: 22px;
+    }
+
+    &_bridge {
+      margin-right: 57px;
+    }
+
+    &_park {
+      margin-right: 76px;
+    }
   }
 }
 
 @media (min-width: @desktop-width) {
-  .input-list_visited li {
-    width: 25%;
+  .input-list__item {
+    &_name {
+      margin-bottom: 18px;
+    }
+
+    &_bridge {
+      margin-right: 0;
+    }
+
+    &_park {
+      margin-right: 0;
+    }
+
+    &_red-rocks {
+      margin-right: -11px;
+    }
   }
 
   .input-list_contacts {
     display: flex;
+  }
+
+  .input-list_visited {
+    justify-content: space-between;
   }
 
   .input-list_contacts li {

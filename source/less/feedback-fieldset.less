@@ -45,7 +45,18 @@
     }
 
     &_name {
+      position: relative;
       width: 50%;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 1px;
+        height: 292px;
+        background-color: #dbdbdb;
+        left: 0;
+        top: 26px;
+      }
     }
   }
 
@@ -56,12 +67,13 @@
     }
 
     &_visited {
-      margin: 0 150px;
+      margin: 0 78px 0 94px;
       margin-bottom: 17px;
     }
 
     &_impression {
       margin-top: 37px;
+      margin-bottom: 10px;
     }
 
     &_emotions {
@@ -79,8 +91,8 @@
     }
 
     &_visited {
-      width: 400px;
-      margin: 24px auto 37px auto;
+      margin-top: 24px;
+      margin-bottom: 34px;
     }
 
     &_name {
@@ -106,6 +118,12 @@
   }
 
   .feedback-fieldset__title {
+    margin-bottom: 22px;
+
+    &_visited {
+      margin-bottom: 39px;
+    }
+
     &_emotions {
       margin-top: 35px;
       margin-bottom: 21px;

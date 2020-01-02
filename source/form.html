@@ -59,15 +59,15 @@
         <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_name">
           <h2 class="feedback-fieldset__title feedback-fieldset__title_name text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center-left">Представтесь:</h2>
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_name input-list input-list_name list-reset">
-            <li class="input-list__item input-item">
+            <li class="input-list__item input-list__item_name input-item">
               <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="first-name">Имя*:</label>
               <input class="input-item__field field field_first-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="first-name" placeholder="Петр" required>
             </li>
-            <li class="input-list__item input-item">
+            <li class="input-list__item input-list__item_name input-item">
               <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="second-name">Фамилия*:</label>
               <input class="input-item__field field field_second-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="second-name" placeholder="Иванов" required>
             </li>
-            <li class="input-list__item input-item">
+            <li class="input-list__item input-list__item_name input-item">
               <label class="input-item__label input-item__label_mid-name text text_color_black text_size_small text_line-height_big" for="middle-name">Отчество:</label>
               <input class="input-item__field field field_middle-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="middle-name" placeholder="Александрович">
             </li>
@@ -75,7 +75,7 @@
         </div>
 
         <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_contacts">
-          <h2 class="feedback-fieldset__title feedback-fieldset__title_contacts text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center">Контактная информация:</h2>
+          <h2 class="feedback-fieldset__title feedback-fieldset__title_contacts fieldset-title fieldset-title_contacts text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center">Контактная информация:</h2>
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_contacts input-list input-list_contacts list-reset">
             <li class="input-list__item input-list__item_phone input-item">
               <label class="input-item__label input-item__label_phone label_phone text text_color_black text_size_small text_line-height_big" for="phone-number"><span class="input-item__label_word1">Контактный </span>телефон*:</label>
@@ -111,21 +111,21 @@
         </div>
 
         <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_visited">
-          <h2 class="feedback-fieldset__title feedback-fieldset__title_visited text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center">Посещенные достопримечательности:</h2>
+          <h2 class="feedback-fieldset__title feedback-fieldset__title_visited fieldset-title fieldset-title_visited text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center">Посещенные<br>достопримечательности:</h2>
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_visited input-list input-list_visited list-reset">
-            <li class="input-list__item input-item input-item_visited">
+            <li class="input-list__item input-list__item_visited input-list__item_bridge input-item input-item_visited">
               <input class="input-item__field field field_checkbox" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked>
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="devil-bridge">Мост Дьявола</label>
             </li>
-            <li class="input-list__item input-item input-item_visited">
+            <li class="input-list__item input-list__item_visited input-list__item_mountain input-item input-item_visited">
               <input class="input-item__field field field_checkbox" type="checkbox" id="mountain-bell" name="visited-checkbox" value="mountain-bell" checked>
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="mountain-bell">Гора-Колокол</label>
             </li>
-            <li class="input-list__item input-item input-item_visited">
+            <li class="input-list__item input-list__item_visited input-list__item_park input-item input-item_visited">
               <input class="input-item__field field field_checkbox" type="checkbox" id="slide-park" name="visited-checkbox" value="slide-park" checked>
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="slide-park">Слайд-парк</label>
             </li>
-            <li class="input-list__item input-item input-item_visited">
+            <li class="input-list__item input-list__item_visited input-list__item_red-rocks input-item input-item_visited">
               <input class="input-item__field field field_checkbox" type="checkbox" id="red-rocks" name="visited-checkbox" value="red-rocks">
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="red-rocks">Красные скалы</label>
             </li>
@@ -133,7 +133,7 @@
         </div>
 
         <div class="feedback-form__fieldset feedback-fieldset feedback-fieldset_emotions">
-          <h2 class="feedback-fieldset__title feedback-fieldset__title_emotions text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center">Опишите свои эмоции:</h2>
+          <h2 class="feedback-fieldset__title feedback-fieldset__title_emotions fieldset-title fieldset-title_emotions text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center">Опишите свои эмоции:</h2>
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_emotions input-list list-reset">
             <li class="input-list__item input-item">
               <textarea class="input-item__field field field_textarea text text_size_medium text_line-height_big text_weight_bold text_transform_normal" name="emotions" id="emotions" placeholder="Опишите подробно все свои восторги"></textarea>
