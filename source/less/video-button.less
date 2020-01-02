@@ -1,0 +1,34 @@
+.video-button {
+  border: none;
+  background-color: transparent;
+  fill: #5c6870;
+
+  &:hover {
+    fill: #333333;
+  }
+
+  &:active {
+    fill: #333333;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .video-button {
+    fill: #ffffff;
+
+    &_subtitles {
+      padding: 0;
+    }
+
+    &:hover {
+      fill: #ffffff;
+      opacity: 0.4;
+    }
+
+    &:active {
+      fill: #ffffff;
+      opacity: 0.3;
+    }
+  }
+}

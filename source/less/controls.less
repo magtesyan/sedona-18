@@ -9,18 +9,18 @@
 }
 
 .controls__refresh {
-  margin-right: 135px;
+  margin-left: -2px;
+  margin-right: 104px;
+}
+
+.controls__fullscreen {
+  margin-right: -4px;
 }
 
 .controls__range {
-  box-sizing: border-box;
   position: absolute;
-  width: 100%;
-  min-height: 45px;
   top: -45px;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 0 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -35,6 +35,28 @@
   }
 
   .controls__refresh {
+    margin-left: 7px;
     margin-right: 0;
+  }
+
+  .controls__subtitles {
+    margin-top: 3px;
+    margin-right: -6px;
+  }
+
+  .controls__fullscreen {
+    margin-right: 13px;
+    margin-top: 3px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .controls__subtitles {
+    margin-top: 2px;
+    margin-right: -9px;
+  }
+
+  .controls__fullscreen {
+    margin-top: 2px;
   }
 }

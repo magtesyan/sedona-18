@@ -1,0 +1,70 @@
+@media (min-width: @tablet-width) {
+  .fieldset-title {
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 125px;
+    }
+
+    &_contacts::before {
+      left: 0;
+      top: 13px;
+    }
+
+    &_contacts::after {
+      right: 0;
+      top: 13px;
+    }
+
+    &_visited::before {
+      left: 0;
+      top: 23px;
+    }
+
+    &_visited::after {
+      right: 0;
+      top: 23px;
+    }
+
+    &_emotions::before {
+      left: 0;
+      top: 13px;
+    }
+
+    &_emotions::after {
+      right: 0;
+      top: 13px;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .fieldset-title {
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: #dbdbdb;
+      height: 1px;
+      width: 278px;
+    }
+
+    &_contacts::before {
+      top: 11px;
+    }
+
+    &_contacts::after {
+      top: 11px;
+    }
+
+    &_visited::before,
+    &_visited::after {
+      top: 28px;
+    }
+  }
+}
