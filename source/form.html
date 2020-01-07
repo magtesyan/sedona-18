@@ -5,9 +5,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body class="page-body">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-body__page-header page-header">
       <button class="visually-hidden page-header__nav-toggle page-header__nav-toggle_open" type="button" aria-label="Открыть меню">
@@ -61,11 +64,11 @@
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_name input-list input-list_name list-reset">
             <li class="input-list__item input-list__item_name input-item">
               <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="first-name">Имя*:</label>
-              <input class="input-item__field field field_first-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="first-name" placeholder="Петр" required>
+              <input class="input-item__field field field_first-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="first-name" placeholder="Петр" required="">
             </li>
             <li class="input-list__item input-list__item_name input-item">
               <label class="input-item__label text text_color_black text_size_small text_line-height_big" for="second-name">Фамилия*:</label>
-              <input class="input-item__field field field_second-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="second-name" placeholder="Иванов" required>
+              <input class="input-item__field field field_second-name text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" type="text" id="second-name" placeholder="Иванов" required="">
             </li>
             <li class="input-list__item input-list__item_name input-item">
               <label class="input-item__label input-item__label_mid-name text text_color_black text_size_small text_line-height_big" for="middle-name">Отчество:</label>
@@ -80,13 +83,13 @@
             <li class="input-list__item input-list__item_phone input-item">
               <label class="input-item__label input-item__label_phone label_phone text text_color_black text_size_small text_line-height_big" for="phone-number"><span class="input-item__label_word1">Контактный </span>телефон*:</label>
               <div class="input-item__phone-wrapper">
-                <input class="input-item__field input-item__field_phone field field_phone-number text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="phone-number" placeholder="Введите телефон" required>
+                <input class="input-item__field input-item__field_phone field field_phone-number text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="phone-number" placeholder="Введите телефон" required="">
               </div>
             </li>
             <li class="input-list__item input-list__item_email input-item">
               <label class="input-item__label input-item__label_email label_email text text_color_black text_size_small text_line-height_big" for="email">Электронная&nbsp;почта*:</label>
               <div class="input-item__email-wrapper">
-                <input class="input-item__field input-item__field_email field field_email text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="email" placeholder="Введите e-mail" required>
+                <input class="input-item__field input-item__field_email field field_email text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" id="email" placeholder="Введите e-mail" required="">
               </div>
             </li>
           </ul>
@@ -96,7 +99,7 @@
           <h2 class="feedback-fieldset__title feedback-fieldset__title_impression text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center-left">Ваше общее впечатление:</h2>
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_impression input-list list-reset">
             <li class="input-list__item input-item input-item_impression">
-              <input class="input-item__field field field_radio" type="radio" id="positive" name="impression-radio" value="positive" checked>
+              <input class="input-item__field field field_radio" type="radio" id="positive" name="impression-radio" value="positive" checked="">
               <label class="input-item__label input-item__label_radio text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="positive">Скорее положительное</label>
             </li>
             <li class="input-list__item input-item input-item_impression">
@@ -114,15 +117,15 @@
           <h2 class="feedback-fieldset__title feedback-fieldset__title_visited fieldset-title fieldset-title_visited text text_color_black text_size_medium-big text_line-height_big text_weight_bold text_align_center">Посещенные<br>достопримечательности:</h2>
           <ul class="feedback-fieldset__input-list feedback-fieldset__input-list_visited input-list input-list_visited list-reset">
             <li class="input-list__item input-list__item_visited input-list__item_bridge input-item input-item_visited">
-              <input class="input-item__field field field_checkbox" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked>
+              <input class="input-item__field field field_checkbox" type="checkbox" id="devil-bridge" name="visited-checkbox" value="devil-bridge" checked="">
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="devil-bridge">Мост Дьявола</label>
             </li>
             <li class="input-list__item input-list__item_visited input-list__item_mountain input-item input-item_visited">
-              <input class="input-item__field field field_checkbox" type="checkbox" id="mountain-bell" name="visited-checkbox" value="mountain-bell" checked>
+              <input class="input-item__field field field_checkbox" type="checkbox" id="mountain-bell" name="visited-checkbox" value="mountain-bell" checked="">
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="mountain-bell">Гора-Колокол</label>
             </li>
             <li class="input-list__item input-list__item_visited input-list__item_park input-item input-item_visited">
-              <input class="input-item__field field field_checkbox" type="checkbox" id="slide-park" name="visited-checkbox" value="slide-park" checked>
+              <input class="input-item__field field field_checkbox" type="checkbox" id="slide-park" name="visited-checkbox" value="slide-park" checked="">
               <label class="input-item__label input-item__label_checkbox text text_color_black text_size_medium text_line-height_big text_weight_bold text_transform_normal" for="slide-park">Слайд-парк</label>
             </li>
             <li class="input-list__item input-list__item_visited input-list__item_red-rocks input-item input-item_visited">
@@ -154,21 +157,21 @@
         <li class="social__item">
           <a class="social__link social-link" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере">
             <svg class="social-link__icon" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
-              <use xlink:href="img/sprite.svg#social-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social-link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фейсбук">
             <svg class="social-link__icon" x="0px" y="0px" width="8.672px" height="18.944px">
-              <use xlink:href="img/sprite.svg#social-fb"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social-link" href="https://www.youtube.com/htmlacademy" aria-label="Мы в ютуб">
             <svg class="social-link__icon" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
-              <use xlink:href="img/sprite.svg#social-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -177,7 +180,7 @@
       <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center text_align_center">Разработано:
         <a class="copyright__link copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML academy">
           <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="41px" viewBox="0 0 60 60">
-            <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </p>
