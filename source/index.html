@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async=""></script>
   </head>
   <body class="page-body">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-body__page-header page-header">
       <button class="visually-hidden page-header__nav-toggle page-header__nav-toggle_open" type="button" aria-label="Открыть меню">
@@ -150,21 +153,21 @@
         <li class="social__item">
           <a class="social__link social-link" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере">
             <svg class="social-link__icon" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
-              <use xlink:href="img/sprite.svg#social-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social-link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фейсбук">
             <svg class="social-link__icon" x="0px" y="0px" width="8.672px" height="18.944px">
-              <use xlink:href="img/sprite.svg#social-fb"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social-link" href="https://www.youtube.com/htmlacademy" aria-label="Мы в ютуб">
             <svg class="social-link__icon" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
-              <use xlink:href="img/sprite.svg#social-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -173,12 +176,11 @@
       <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center text_align_center">Разработано:
         <a class="copyright__link copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML academy">
           <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="41px" viewBox="0 0 60 60">
-            <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </p>
 
     </footer>
-
   </body>
 </html>

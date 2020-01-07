@@ -5,10 +5,13 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async></script>
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async=""></script>
   </head>
   <body class="page-body">
+    <div style="display: none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-body__page-header page-header">
       <button class="page-header__nav-toggle" type="button">Открыть меню</button>
@@ -52,7 +55,7 @@
 
       <ul class="page-main__photos photos list-reset">
         <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
+          <a class="photo__image-link" href="##">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
@@ -65,16 +68,16 @@
           <div class="photo__description">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Неродные просторы</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Борис</p>
-            <a class="photo__likes photo__likes_first text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
+            <a class="photo__likes photo__likes_first text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="##">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="img/sprite.svg#like"></use>
+                <use xlink:href="#icon-like"></use>
               </svg>
               <span class="photo__likes-count">1350</span>
             </a>
           </div>
         </li>
         <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
+          <a class="photo__image-link" href="##">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
@@ -87,16 +90,16 @@
           <div class="photo__description">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Местная&nbsp;растительность</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Сергей</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium  text_weight_bold text_decoration_none" href="#">
+            <a class="photo__likes text text_color_black text_size_small text_line-height_medium  text_weight_bold text_decoration_none" href="##">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="img/sprite.svg#like"></use>
+                <use xlink:href="#icon-like"></use>
               </svg>
               <span class="photo__likes-count">143</span>
             </a>
           </div>
         </li>
         <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
+          <a class="photo__image-link" href="##">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
@@ -109,16 +112,16 @@
           <div class="photo__description photo__description_dark">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Дорога на север</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Петр</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
+            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="##">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="img/sprite.svg#like"></use>
+                <use xlink:href="#icon-like"></use>
               </svg>
               <span class="photo__likes-count">96</span>
             </a>
           </div>
         </li>
         <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
+          <a class="photo__image-link" href="##">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
@@ -131,9 +134,9 @@
           <div class="photo__description">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Мост дьявола</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Антон</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
+            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="##">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="img/sprite.svg#like"></use>
+                <use xlink:href="#icon-like"></use>
               </svg>
               <span class="photo__likes-count">254</span>
             </a>
@@ -158,7 +161,7 @@
           <div class="clip__controls controls">
             <button class="controls__refresh video-button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20">
-                <use xlink:href="img/sprite.svg#video-refresh"></use>
+                <use xlink:href="#icon-video-replay"></use>
               </svg>
             </button>
             <div class="controls__range video-range">
@@ -168,12 +171,12 @@
             </div>
             <button class="controls__subtitles video-button video-button_subtitles">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20">
-                <use xlink:href="img/sprite.svg#video-cc"></use>
+                <use xlink:href="#icon-video-subtitles"></use>
               </svg>
             </button>
             <button class="controls__fullscreen video-button">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20">
-                <use xlink:href="img/sprite.svg#video-fullscrean"></use>
+                <use xlink:href="#icon-video-fullscreen"></use>
               </svg>
             </button>
 
@@ -190,21 +193,21 @@
         <li class="social__item">
           <a class="social__link social-link" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере">
             <svg class="social-link__icon" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
-              <use xlink:href="img/sprite.svg#social-twitter"></use>
+              <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social-link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фейсбук">
             <svg class="social-link__icon" x="0px" y="0px" width="8.672px" height="18.944px">
-              <use xlink:href="img/sprite.svg#social-fb"></use>
+              <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social-link" href="https://www.youtube.com/htmlacademy" aria-label="Мы в ютуб">
             <svg class="social-link__icon" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
-              <use xlink:href="img/sprite.svg#social-youtube"></use>
+              <use xlink:href="#icon-youtube"></use>
             </svg>
           </a>
         </li>
@@ -213,7 +216,7 @@
       <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center text_align_center">Разработано:
         <a class="copyright__link copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML academy">
           <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="41px" viewBox="0 0 60 60">
-            <use xlink:href="img/sprite.svg#htmlacademy-logo"></use>
+            <use xlink:href="#logo-htmlacademy"></use>
           </svg>
         </a>
       </p>
