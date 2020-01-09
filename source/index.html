@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" as="font">
     <link href="css/style.min.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async=""></script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async="" rel="stylesheet"></script>
   </head>
   <body class="page-body">
     <div style="display: none">
@@ -14,15 +14,18 @@
     </div>
 
     <header class="page-body__page-header page-header">
-      <button class="visually-hidden page-header__nav-toggle page-header__nav-toggle_open" type="button" aria-label="Открыть меню">
-        <img src="img/icon-menu.svg" width="23" height="21">
-      </button>
-      <button class="visually-hidden page-header__nav-toggle page-header__nav-toggle_close" type="button" aria-label="Закрыть меню">
-        <img src="img/icon-cross.svg" width="23" height="21">
-      </button>
-
-      <nav class="page-header__main-nav main-nav">
-        <ul class="main-nav__list nav-list list-reset text text_color_white text_size_medium-small text_line-height_extra-big text_weight_bold text_align_center text_decoration_none">
+      <nav class="page-header__main-nav main-nav main-nav_nojs">
+        <button class="page-header__nav-toggle nav-toggle nav-toggle_open page-header__nav-toggle_open show" type="button" aria-label="Открыть меню">
+          <svg class="page-header__menu-icon" x="0px" y="0px" width="27px" height="26px" viewBox="0 0 17.5 14.663">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="page-header__nav-toggle nav-toggle nav-toggle_close page-header__nav-toggle_close hide" type="button" aria-label="Закрыть меню">
+          <svg class="page-header__menu-icon" x="0px" y="0px" width="27px" height="25px" viewBox="0 0 17.5 14.663">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="main-nav__list nav-list nav-list_closed list-reset text text_color_white text_size_medium-small text_line-height_extra-big text_weight_bold text_align_center text_decoration_none">
           <li class="nav-list__item">
             <a class="nav-list__link nav-link" href="index.html">Главная</a>
           </li>
@@ -138,9 +141,9 @@
           <a class="search-hotel__search-button button text text_color_white text_size_big text_line-height_big text_weight_bold text_align_center text_decoration_none" href="#">Найти гостиницу</a>
         </div>
         <div class="hotel__map map">
-          <a class="map__image-link" href="#">
-
-          </a>
+          <div class="map__image-link">
+            <iframe class="map__interactive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d703390.7285049476!2d-111.60267932737962!3d35.0194874058779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1578483557438!5m2!1sru!2sru" style="border:0;" allowfullscreen="" aria-label="Карта Седоны"></iframe>
+          </div>
         </div>
       </div>
 
@@ -182,5 +185,6 @@
       </p>
 
     </footer>
+    <script src="js/scripts.min.js"></script>
   </body>
 </html>

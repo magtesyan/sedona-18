@@ -1,7 +1,11 @@
 .welcome {
   position: relative;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
-  //background-color: #b4cce4;
+
+  &_bg_photo,
+  &_bg_form {
+    background-size: 100%;
+  }
 
   @media (min-resolution: @retina-dppx) {
     background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 99%;
@@ -22,7 +26,7 @@
 }
 
 .welcome__img {
-  margin: 50px 46px;
+  margin: 50px auto;
 
   &_index {
     display: block;
@@ -34,6 +38,8 @@
   .welcome {
     padding-bottom: 66px;
     background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 99%;
+
+    background-size: 100%;
 
     @media (min-resolution: @retina-dppx) {
       background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 99%;

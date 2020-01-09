@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" as="font">
     <link href="css/style.min.css" rel="stylesheet">
-    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async=""></script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async="" rel="stylesheet"></script>
   </head>
   <body class="page-body">
     <div style="display: none">
@@ -14,11 +14,18 @@
     </div>
 
     <header class="page-body__page-header page-header">
-      <button class="page-header__nav-toggle" type="button">Открыть меню</button>
-      <button class="page-header__nav-toggle page-header__nav-toggle_close" type="button">Закрыть меню</button>
-
-      <nav class="page-header__main-nav main-nav">
-        <ul class="main-nav__list nav-list list-reset text text_color_white text_size_medium-small text_line-height_extra-big text_weight_bold text_align_center text_decoration_none">
+      <nav class="page-header__main-nav main-nav main-nav_nojs">
+        <button class="page-header__nav-toggle nav-toggle nav-toggle_open page-header__nav-toggle_open show" type="button" aria-label="Открыть меню">
+          <svg class="page-header__menu-icon" x="0px" y="0px" width="27px" height="26px" viewBox="0 0 17.5 14.663">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+        </button>
+        <button class="page-header__nav-toggle nav-toggle nav-toggle_close page-header__nav-toggle_close hide" type="button" aria-label="Закрыть меню">
+          <svg class="page-header__menu-icon" x="0px" y="0px" width="27px" height="25px" viewBox="0 0 17.5 14.663">
+            <use xlink:href="#icon-cross"></use>
+          </svg>
+        </button>
+        <ul class="main-nav__list nav-list nav-list_closed list-reset text text_color_white text_size_medium-small text_line-height_extra-big text_weight_bold text_align_center text_decoration_none">
           <li class="nav-list__item">
             <a class="nav-list__link nav-link" href="index.html">Главная</a>
           </li>
@@ -34,7 +41,7 @@
         </ul>
       </nav>
 
-      <a class="page-header__logo logo" href="#">
+      <a class="page-header__logo logo" href="index.html">
         <picture>
           <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
           <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
@@ -42,8 +49,8 @@
         </picture>
       </a>
 
-      <div class="page-header__welcome welcome">
-        <img class="welcome__img" src="img/text-sedona.svg" width="229" height="39" alt="Welcome to Sedona">
+      <div class="page-header__welcome welcome welcome_bg_photo">
+        <img class="welcome__img welcome-img" src="img/text-sedona.svg" width="229" height="39" alt="Welcome to Sedona">
       </div>
 
       <h1 class="page-header__title text text_color_black text_size_medium-extra text_line-height_big text_align_center">Фото и видео</h1>
@@ -55,7 +62,7 @@
 
       <ul class="page-main__photos photos list-reset">
         <li class="photos__item photo">
-          <a class="photo__image-link" href="##">
+          <a class="photo__image-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
@@ -68,7 +75,7 @@
           <div class="photo__description">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Неродные просторы</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Борис</p>
-            <a class="photo__likes photo__likes_first text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="##">
+            <a class="photo__likes photo__likes_first text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
                 <use xlink:href="#icon-like"></use>
               </svg>
@@ -77,7 +84,7 @@
           </div>
         </li>
         <li class="photos__item photo">
-          <a class="photo__image-link" href="##">
+          <a class="photo__image-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
@@ -90,7 +97,7 @@
           <div class="photo__description">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Местная&nbsp;растительность</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Сергей</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium  text_weight_bold text_decoration_none" href="##">
+            <a class="photo__likes text text_color_black text_size_small text_line-height_medium  text_weight_bold text_decoration_none" href="#">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
                 <use xlink:href="#icon-like"></use>
               </svg>
@@ -99,7 +106,7 @@
           </div>
         </li>
         <li class="photos__item photo">
-          <a class="photo__image-link" href="##">
+          <a class="photo__image-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
@@ -112,7 +119,7 @@
           <div class="photo__description photo__description_dark">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Дорога на север</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Петр</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="##">
+            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
                 <use xlink:href="#icon-like"></use>
               </svg>
@@ -121,7 +128,7 @@
           </div>
         </li>
         <li class="photos__item photo">
-          <a class="photo__image-link" href="##">
+          <a class="photo__image-link" href="#">
             <picture>
               <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
               <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
@@ -134,7 +141,7 @@
           <div class="photo__description">
             <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Мост дьявола</h2>
             <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Антон</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="##">
+            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
               <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
                 <use xlink:href="#icon-like"></use>
               </svg>
@@ -159,7 +166,7 @@
             <img class="clip__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео-презентация Седоны">
           </picture>
           <div class="clip__controls controls">
-            <button class="controls__refresh video-button">
+            <button class="controls__refresh video-button" aria-label="Повтор видео">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20">
                 <use xlink:href="#icon-video-replay"></use>
               </svg>
@@ -169,12 +176,12 @@
                 <div class="video-scale__bar"></div>
               </div>
             </div>
-            <button class="controls__subtitles video-button video-button_subtitles">
+            <button class="controls__subtitles video-button video-button_subtitles" aria-label="Субтитры">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20">
                 <use xlink:href="#icon-video-subtitles"></use>
               </svg>
             </button>
-            <button class="controls__fullscreen video-button">
+            <button class="controls__fullscreen video-button" aria-label="Полный экран">
               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20">
                 <use xlink:href="#icon-video-fullscreen"></use>
               </svg>
@@ -222,6 +229,6 @@
       </p>
 
     </footer>
-
+  <script src="js/scripts.min.js"></script>
   </body>
 </html>

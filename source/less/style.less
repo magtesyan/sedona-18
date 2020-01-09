@@ -1,5 +1,6 @@
 @tablet-width: 768px;
 @desktop-width: 1200px;
+@mobile-width-only: 767px;
 @retina-dppx: 1.5dppx;
 
 .visually-hidden {
@@ -21,6 +22,14 @@
   clip: rect(0 0 0 0);
 }
 
+.hide {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
 @import "clip.less";
 @import "page-body.less";
 @import "page-header.less";
@@ -35,6 +44,8 @@
 @import "details.less";
 @import "details-point.less";
 @import "map.less";
+@import "main-nav.less";
+@import "modal.less";
 @import "page-main.less";
 @import "photos.less";
 @import "photo.less";
