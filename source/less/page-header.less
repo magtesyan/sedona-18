@@ -6,19 +6,34 @@
 }
 
 .page-header__main-nav {
+  position: relative;
   margin-bottom: 55px;
 }
 
 .page-header__logo {
   z-index: 1;
   position: absolute;
-  top: 224px;
+  top: 0;
   left: 50%;
   transform: translateX(-50px);
 }
 
 .page-header__nav-toggle {
   position: absolute;
+  border: none;
+  background-color: transparent;
+
+  &_open {
+    bottom: -43px;
+    right: 13px;
+    fill: #81b3d2;
+  }
+
+  &_close {
+    top: 15px;
+    right: 13px;
+    fill: #ffffff;
+  }
 }
 
 .page-header__welcome {
@@ -45,6 +60,10 @@
 @media (min-width: @tablet-width) {
   .page-header {
     padding-bottom: 4px;
+  }
+
+  .page-header__nav-toggle {
+    display: none;
   }
 
   .page-header__main-nav {
