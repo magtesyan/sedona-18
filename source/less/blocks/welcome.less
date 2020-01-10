@@ -1,14 +1,15 @@
 .welcome {
   position: relative;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 100%;
+  background: #81b3d2 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
 
   &_bg_photo,
   &_bg_form {
     background-size: 100%;
+    background-position: 50% 100%;
   }
 
   @media (min-resolution: @retina-dppx) {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 99%;
+    background: #81b3d2 url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 0;
     background-size: 768px auto;
   }
 
@@ -37,12 +38,12 @@
 @media (min-width: @tablet-width) {
   .welcome {
     padding-bottom: 66px;
-    background: url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 99%;
+    background: #81b3d2 url("../img/bg-back-tablet@1x.jpg") no-repeat 50% 0;
 
     background-size: 100%;
 
     @media (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 99%;
+      background: #81b3d2 url("../img/bg-back-tablet@2x.jpg") no-repeat 50% 0;
       background-size: 768px auto;
     }
 
@@ -55,6 +56,11 @@
     &_bg_index {
       padding-bottom: 0;
     }
+
+    &_bg_photo,
+    &_bg_form {
+      background-position: 50% 100%;
+    }
   }
 
   .welcome__img {
@@ -65,7 +71,7 @@
 
     &_index {
       width: 460px;
-      height: 350px;
+      height: 348px;
       margin: 78px auto 92px auto;
     }
   }
@@ -74,15 +80,20 @@
 @media (min-width: @desktop-width) {
   .welcome {
     padding-bottom: 143px;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 99%;
+    background: #81b3d2 url("../img/bg-back-desktop@1x.jpg") no-repeat 50% 0;
 
     @media (min-resolution: @retina-dppx) {
-      background: url("../img/bg-back-desktop@2x.jpg") no-repeat 50% 99%;
+      background: #81b3d2 url("../img/bg-back-desktop@2x.jpg") no-repeat 50% 99%;
       background-size: cover;
     }
 
     &_bg_index {
       padding-bottom: 0;
+    }
+
+    &_bg_photo,
+    &_bg_form {
+      background-position: 50% 100%;
     }
 
     &::after {

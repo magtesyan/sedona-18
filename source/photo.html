@@ -4,231 +4,232 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Седона</title>
-    <link rel="preload" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic-ext" as="font">
     <link href="css/style.min.css" rel="stylesheet">
+    <link rel="preload" href="fonts/ptsans.woff2" as="font">
     <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js" async="" rel="stylesheet"></script>
   </head>
   <body class="page-body">
     <div style="display: none">
       <include src="build/img/sprite.svg"></include>
     </div>
+    <div class="page-body__wrapper">
+      <header class="page-body__page-header page-header">
+        <nav class="page-header__main-nav main-nav main-nav_nojs">
+          <button class="page-header__nav-toggle nav-toggle nav-toggle_open page-header__nav-toggle_open show" type="button" aria-label="Открыть меню">
+            <svg class="page-header__menu-icon" x="0px" y="0px" width="27" height="26" viewBox="0 0 17.5 14.663">
+              <use xlink:href="#icon-menu"></use>
+            </svg>
+          </button>
+          <button class="page-header__nav-toggle nav-toggle nav-toggle_close page-header__nav-toggle_close hide" type="button" aria-label="Закрыть меню">
+            <svg class="page-header__menu-icon" x="0px" y="0px" width="27" height="25" viewBox="0 0 17.5 14.663">
+              <use xlink:href="#icon-cross"></use>
+            </svg>
+          </button>
+          <ul class="main-nav__list nav-list nav-list_open list-reset text text_color_white text_size_medium-small text_line-height_extra-big text_weight_bold text_align_center text_decoration_none">
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link" href="index.html">Главная</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link nav-link_current" href="photo.html">Фото и видео</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="nav-list__item">
+              <a class="nav-list__link nav-link" href="https://htmlacademy.ru/">HTML Academy</a>
+            </li>
+          </ul>
+        </nav>
 
-    <header class="page-body__page-header page-header">
-      <nav class="page-header__main-nav main-nav main-nav_nojs">
-        <button class="page-header__nav-toggle nav-toggle nav-toggle_open page-header__nav-toggle_open show" type="button" aria-label="Открыть меню">
-          <svg class="page-header__menu-icon" x="0px" y="0px" width="27px" height="26px" viewBox="0 0 17.5 14.663">
-            <use xlink:href="#icon-menu"></use>
-          </svg>
-        </button>
-        <button class="page-header__nav-toggle nav-toggle nav-toggle_close page-header__nav-toggle_close hide" type="button" aria-label="Закрыть меню">
-          <svg class="page-header__menu-icon" x="0px" y="0px" width="27px" height="25px" viewBox="0 0 17.5 14.663">
-            <use xlink:href="#icon-cross"></use>
-          </svg>
-        </button>
-        <ul class="main-nav__list nav-list nav-list_closed list-reset text text_color_white text_size_medium-small text_line-height_extra-big text_weight_bold text_align_center text_decoration_none">
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-link" href="index.html">Главная</a>
+        <a class="page-header__logo logo" href="index.html">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+            <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="City of Sedona emblem">
+          </picture>
+        </a>
+
+        <div class="page-header__welcome welcome welcome_bg_photo">
+          <img class="welcome__img welcome-img" src="img/text-sedona.svg" width="229" height="39" alt="Welcome to Sedona">
+        </div>
+
+        <h1 class="page-header__title text text_color_black text_size_medium-extra text_line-height_big text_align_center">Фото и видео</h1>
+        <p class="page-header__intro page-header__intro_photo text text_color_black text_size_small text_line-height_medium text_align_center">Не можете решиться на путешествие из&#8209;за&nbsp;курса? Фотографии помогут вам&nbsp;забыть&nbsp;о&nbsp;политике и экономике.</p>
+
+      </header>
+
+      <main class="page-body__page-main page-main">
+
+        <ul class="page-main__photos photos list-reset">
+          <li class="photos__item photo">
+            <a class="photo__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
+              </picture>
+            </a>
+            <div class="photo__description">
+              <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Неродные просторы</h2>
+              <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Борис</p>
+              <a class="photo__likes photo__likes_first text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#" aria-label="Отметка нравится">
+                <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="20" viewBox="0 0 22 20">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="photo__likes-count">1350</span>
+              </a>
+            </div>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-link" href="photo.html">Фото и видео</a>
+          <li class="photos__item photo">
+            <a class="photo__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+              </picture>
+            </a>
+            <div class="photo__description">
+              <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Местная&nbsp;растительность</h2>
+              <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Сергей</p>
+              <a class="photo__likes text text_color_black text_size_small text_line-height_medium  text_weight_bold text_decoration_none" href="#" aria-label="Отметка нравится">
+                <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="20" viewBox="0 0 22 20">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="photo__likes-count">143</span>
+              </a>
+            </div>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-link" href="form.html">Форма отзыва</a>
+          <li class="photos__item photo">
+            <a class="photo__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
+              </picture>
+            </a>
+            <div class="photo__description photo__description_dark">
+              <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Дорога на север</h2>
+              <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Петр</p>
+              <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#" aria-label="Отметка нравится">
+                <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="20" viewBox="0 0 22 20">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="photo__likes-count">96</span>
+              </a>
+            </div>
           </li>
-          <li class="nav-list__item">
-            <a class="nav-list__link nav-link" href="https://htmlacademy.ru/">HTML Academy</a>
+          <li class="photos__item photo">
+            <a class="photo__image-link" href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
+              </picture>
+            </a>
+            <div class="photo__description">
+              <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Мост дьявола</h2>
+              <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Антон</p>
+              <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#" aria-label="Отметка нравится">
+                <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22" height="20" viewBox="0 0 22 20">
+                  <use xlink:href="#icon-like"></use>
+                </svg>
+                <span class="photo__likes-count">254</span>
+              </a>
+            </div>
           </li>
         </ul>
-      </nav>
 
-      <a class="page-header__logo logo" href="index.html">
-        <picture>
-          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
-          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-          <img class="logo__image" src="img/logo-sedona-mobile.svg" alt="City of Sedona emblem">
-        </picture>
-      </a>
-
-      <div class="page-header__welcome welcome welcome_bg_photo">
-        <img class="welcome__img welcome-img" src="img/text-sedona.svg" width="229" height="39" alt="Welcome to Sedona">
-      </div>
-
-      <h1 class="page-header__title text text_color_black text_size_medium-extra text_line-height_big text_align_center">Фото и видео</h1>
-      <p class="page-header__intro page-header__intro_photo text text_color_black text_size_small text_line-height_medium text_align_center">Не можете решиться на путешествие из&#8209;за&nbsp;курса? Фотографии помогут вам&nbsp;забыть&nbsp;о&nbsp;политике и экономике.</p>
-
-    </header>
-
-    <main class="page-body__page-main page-main">
-
-      <ul class="page-main__photos photos list-reset">
-        <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x" width="280" height="280" alt="Неродные просторы">
-            </picture>
-          </a>
-          <div class="photo__description">
-            <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Неродные просторы</h2>
-            <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Борис</p>
-            <a class="photo__likes photo__likes_first text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
-              <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="#icon-like"></use>
-              </svg>
-              <span class="photo__likes-count">1350</span>
-            </a>
+        <div class="page-main__video video">
+          <div class="video__promo promo-video">
+            <p class="promo-video__title text text_color_black text_size_medium-extra text_line-height_big text_weight_bold text_align_center">Все еще сомневаетесь?</p>
+            <p class="promo-video__intro text text_color_black text_size_small text_line-height_medium text_align_center">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
           </div>
-        </li>
-        <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
+          <div class="video__clip clip">
             <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x" width="280" height="280" alt="Местная растительность">
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+              <img class="clip__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео-презентация Седоны">
             </picture>
-          </a>
-          <div class="photo__description">
-            <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Местная&nbsp;растительность</h2>
-            <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Сергей</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium  text_weight_bold text_decoration_none" href="#">
-              <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="#icon-like"></use>
-              </svg>
-              <span class="photo__likes-count">143</span>
-            </a>
-          </div>
-        </li>
-        <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x" width="280" height="280" alt="Дорога на север">
-            </picture>
-          </a>
-          <div class="photo__description photo__description_dark">
-            <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Дорога на север</h2>
-            <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Петр</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
-              <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="#icon-like"></use>
-              </svg>
-              <span class="photo__likes-count">96</span>
-            </a>
-          </div>
-        </li>
-        <li class="photos__item photo">
-          <a class="photo__image-link" href="#">
-            <picture>
-              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-              <img class="photo__image" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x" width="280" height="280" alt="Мост дьявола">
-            </picture>
-          </a>
-          <div class="photo__description">
-            <h2 class="photo__title text text_color_black text_size_small text_line-height_medium text_weight_bold">Мост дьявола</h2>
-            <p class="photo__author text text_color_black text_size_small text_line-height_medium text_transform_normal">Автор фото: Антон</p>
-            <a class="photo__likes text text_color_black text_size_small text_line-height_medium text_weight_bold text_decoration_none" href="#">
-              <svg class="photo__like-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="22px" height="20px" viewBox="0 0 22 20">
-                <use xlink:href="#icon-like"></use>
-              </svg>
-              <span class="photo__likes-count">254</span>
-            </a>
-          </div>
-        </li>
-      </ul>
-
-      <div class="page-main__video video">
-        <div class="video__promo promo-video">
-          <p class="promo-video__title text text_color_black text_size_medium-extra text_line-height_big text_weight_bold text_align_center">Все еще сомневаетесь?</p>
-          <p class="promo-video__intro text text_color_black text_size_small text_line-height_medium text_align_center">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-        </div>
-        <div class="video__clip clip">
-          <picture>
-            <source type="image/webp" media="(min-width: 1200px)" srcset="img/video-desktop@1x.webp 1x, img/video-desktop@2x.webp 2x">
-            <source type="image/webp" media="(min-width: 768px)" srcset="img/video-tablet@1x.webp 1x, img/video-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/video-mobile@1x.webp 1x, img/video-mobile@2x.webp 2x">
-            <source media="(min-width: 1200px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
-            <img class="clip__image" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" width="320" height="201" alt="Видео-презентация Седоны">
-          </picture>
-          <div class="clip__controls controls">
-            <button class="controls__refresh video-button" aria-label="Повтор видео">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20">
-                <use xlink:href="#icon-video-replay"></use>
-              </svg>
-            </button>
-            <div class="controls__range video-range">
-              <div class="video-range__scale video-scale">
-                <div class="video-scale__bar"></div>
+            <div class="clip__controls controls">
+              <button class="controls__refresh video-button" aria-label="Повтор видео">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16" height="20" viewBox="0 0 16 20">
+                  <use xlink:href="#icon-video-replay"></use>
+                </svg>
+              </button>
+              <div class="controls__range video-range">
+                <div class="video-range__scale video-scale">
+                  <div class="video-scale__bar"></div>
+                </div>
               </div>
-            </div>
-            <button class="controls__subtitles video-button video-button_subtitles" aria-label="Субтитры">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20">
-                <use xlink:href="#icon-video-subtitles"></use>
-              </svg>
-            </button>
-            <button class="controls__fullscreen video-button" aria-label="Полный экран">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20">
-                <use xlink:href="#icon-video-fullscreen"></use>
-              </svg>
-            </button>
+              <button class="controls__subtitles video-button video-button_subtitles" aria-label="Субтитры">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="32" height="20" viewBox="0 0 32 20">
+                  <use xlink:href="#icon-video-subtitles"></use>
+                </svg>
+              </button>
+              <button class="controls__fullscreen video-button" aria-label="Полный экран">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="20" height="20" viewBox="0 0 20 20">
+                  <use xlink:href="#icon-video-fullscreen"></use>
+                </svg>
+              </button>
 
+            </div>
           </div>
         </div>
-      </div>
 
-    </main>
+      </main>
 
-    <footer class="page-body__page-footer page-footer">
-      <a class="page-footer__hash text text_color_black text_size_big text_line-height_big text_weight_bold text_align_center text_decoration_none" href="#">#visitsedona</a>
+      <footer class="page-body__page-footer page-footer">
+        <a class="page-footer__hash text text_color_black text_size_big text_line-height_big text_weight_bold text_align_center text_decoration_none" href="#">#visitsedona</a>
 
-      <ul class="page-footer__social-list social list-reset">
-        <li class="social__item">
-          <a class="social__link social-link" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере">
-            <svg class="social-link__icon" x="0px" y="0px" width="17.5px" height="14.663px" viewBox="0 0 17.5 14.663">
-              <use xlink:href="#icon-twitter"></use>
+        <ul class="page-footer__social-list social list-reset">
+          <li class="social__item">
+            <a class="social__link social-link" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в твиттере">
+              <svg class="social-link__icon" x="0px" y="0px" width="18" height="15" viewBox="0 0 17.5 14.663">
+                <use xlink:href="#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social-link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фейсбук">
+              <svg class="social-link__icon" x="0px" y="0px" width="9" height="19">
+                <use xlink:href="#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social-link" href="https://www.youtube.com/htmlacademy" aria-label="Мы в ютуб">
+              <svg class="social-link__icon" x="0px" y="0px" width="20" height="14" viewBox="0 0 19.979 14.015">
+                <use xlink:href="#icon-youtube"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+
+        <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center text_align_center">Разработано:
+          <a class="copyright__link copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML academy">
+            <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="41" height="34" viewBox="0 0 60 60">
+              <use xlink:href="#logo-htmlacademy"></use>
             </svg>
           </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social-link" href="https://www.facebook.com/htmlacademy" aria-label="Мы в фейсбук">
-            <svg class="social-link__icon" x="0px" y="0px" width="8.672px" height="18.944px">
-              <use xlink:href="#icon-facebook"></use>
-            </svg>
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social-link" href="https://www.youtube.com/htmlacademy" aria-label="Мы в ютуб">
-            <svg class="social-link__icon" x="0px" y="0px" width="19.979px" height="14.015px" viewBox="0 0 19.979 14.015">
-              <use xlink:href="#icon-youtube"></use>
-            </svg>
-          </a>
-        </li>
-      </ul>
+        </p>
 
-      <p class="page-footer__copyright copyright text text_color_black text_size_small text_line-height_big text_align_center text_align_center">Разработано:
-        <a class="copyright__link copyright-link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML academy">
-          <svg class="copyright__logo" xmlns="http://www.w3.org/2000/svg" width="41px" viewBox="0 0 60 60">
-            <use xlink:href="#logo-htmlacademy"></use>
-          </svg>
-        </a>
-      </p>
-
-    </footer>
+      </footer>
+    </div>
   <script src="js/scripts.min.js"></script>
   </body>
 </html>

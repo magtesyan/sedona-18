@@ -12,6 +12,10 @@
   &_radio,
   &_checkbox {
     width: 30px;
+
+    &:focus + label::before {
+      outline: rgb(59, 153, 252) auto 5px;
+    }
   }
 
   &::placeholder {

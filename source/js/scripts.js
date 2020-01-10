@@ -4,8 +4,17 @@ var navToggleClose = document.querySelector('.nav-toggle_close');
 var navList = document.querySelector('.nav-list');
 
 navMain.classList.remove('main-nav_nojs');
+menuClose();
 
 navToggleOpen.addEventListener('click', function() {
+  menuOpen();
+});
+
+navToggleClose.addEventListener('click', function() {
+  menuClose();
+});
+
+function menuOpen() {
   if (navList.classList.contains('nav-list_closed')) {
       navList.classList.remove('nav-list_closed');
       navList.classList.add('nav-list_open');
@@ -15,9 +24,9 @@ navToggleOpen.addEventListener('click', function() {
       navToggleClose.classList.add('show');
       document.querySelector('.page-header__logo').style.top="224px";
   }
-});
+}
 
-navToggleClose.addEventListener('click', function() {
+function menuClose() {
   if (navList.classList.contains('nav-list_open')) {
       navList.classList.remove('nav-list_open');
       navList.classList.add('nav-list_closed');
@@ -27,4 +36,4 @@ navToggleClose.addEventListener('click', function() {
       navToggleOpen.classList.add('show');
       document.querySelector('.page-header__logo').style.top="0";
   }
-});
+}
