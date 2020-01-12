@@ -2,15 +2,14 @@
   position: relative;
   background: #81b3d2 url("../img/bg-back-mobile@1x.jpg") no-repeat 50% 0;
 
-  &_bg_photo,
-  &_bg_form {
-    background-size: 100%;
-    background-position: 50% 100%;
-  }
-
   @media (min-resolution: @retina-dppx) {
     background: #81b3d2 url("../img/bg-back-mobile@2x.jpg") no-repeat 50% 0;
     background-size: 768px auto;
+  }
+
+  &_bg_photo,
+  &_bg_form {
+    background-position: 50% 100%;
   }
 
   &::after {

@@ -168,6 +168,20 @@
       margin-bottom: 22px;
     }
   }
+
+  .input-item__label {
+    &_radio {
+      margin-left: 37px;
+
+      &::before {
+        left: -75px;
+      }
+
+      &::after {
+        left: -57px;
+      }
+    }
+  }
 }
 
 @media (min-width: @desktop-width) {
@@ -195,12 +209,12 @@
 
     &_phone {
       margin-left: 0;
-      margin-top: 16px;
+      margin-top: 19px;
       margin-right: 6px;
     }
 
     &_email {
-      margin-top: 16px;
+      margin-top: 19px;
       margin-bottom: 14px;
       margin-left: 79px;
       margin-right: 4px;
@@ -213,6 +227,10 @@
 
     &_name {
       margin-top: 16px;
+    }
+
+    &_radio {
+      margin-left: 41px;
     }
   }
 }

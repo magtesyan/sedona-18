@@ -45,7 +45,7 @@
 }
 
 .page-header__title {
-  margin-top: 17px;
+  margin-top: 14px;
   margin-bottom: 11px;
 }
 
@@ -88,12 +88,14 @@
     margin-bottom: 47px;
 
     &_form {
+      margin-top: 10px;
       margin-left: auto;
       margin-right: auto;
       width: 440px;
     }
 
     &_photo {
+      margin-top: 10px;
       margin-left: auto;
       margin-right: auto;
       width: 440px;
@@ -102,8 +104,13 @@
 }
 
 @media (min-width: @desktop-width) {
+  .page-header {
+    padding-bottom: 0;
+  }
+
   .page-header__title {
-    margin-top: 91px;
+    margin-top: 90px;
+    margin-bottom: 17px;
   }
 
   .page-header__slogan {
@@ -116,7 +123,11 @@
 
     &_index {
       width: 500px;
-      margin-bottom: 48px;
+      margin-bottom: 51px;
+    }
+
+    &_form {
+      margin-bottom: 37px;
     }
   }
 
