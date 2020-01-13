@@ -1,3 +1,4 @@
+//
 "use strict";
 
 var gulp = require("gulp");
@@ -125,4 +126,3 @@ gulp.task("server", function () {
 
 gulp.task("build", gulp.series("clean", "copy", "css", "js", "sprite", "html"))
 gulp.task("start", gulp.series("build", "server"));
-//
