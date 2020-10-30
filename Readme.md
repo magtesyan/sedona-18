@@ -23,5 +23,3 @@ npm start
 
 [travis-image]: https://travis-ci.com/magtesyan/sedona-18.svg?branch=master
 [travis-url]: https://travis-ci.com/magtesyan/sedona-18
-[dependency-image]: https://david-dm.org/magtesyan/sedona-18/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/magtesyan/sedona-18?type=dev
